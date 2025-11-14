@@ -44,14 +44,7 @@ test('Upload Supporting Document', async ({ page, context }, testInfo) => {
         await expect(successToast).toBeVisible({ timeout: 10000 });
     });
 
-    // 🪜 Step 6: Verify document appears in the uploaded list 50
-   // await test.step('Verify uploaded document in the table', async () => {
-   //     await page.getByRole('button', { name: 'dataTables-example_length' }).click();
-   //     await page.getByRole('link', { name: '50' }).click();
-   //     await page.waitForTimeout(4000)
-   //     const fileRow = page.locator('table >> text=Test_Upload_01.pdf');
-   //     await expect(fileRow).toBeVisible({ timeout: 10000 });
-   // });
+
 
     // 🧷 Attach console logs to Allure
     testInfo.attachments = testInfo.attachments || [];
