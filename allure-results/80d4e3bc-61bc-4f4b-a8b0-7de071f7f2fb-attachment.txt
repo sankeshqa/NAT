@@ -1,0 +1,6 @@
+[warning] [DOM] Found 2 elements with non-unique id #delivery_type: (More info: https://goo.gl/9p2vKq) %o %o
+[warning] [DOM] Found 2 elements with non-unique id #searchBtnId: (More info: https://goo.gl/9p2vKq) %o %o
+[log] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object]
+[warning] [DOM] Found 2 elements with non-unique id #delivery_type: (More info: https://goo.gl/9p2vKq) %o %o
+[warning] [DOM] Found 2 elements with non-unique id #searchBtnId: (More info: https://goo.gl/9p2vKq) %o %o
+[log] [Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object]

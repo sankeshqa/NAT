@@ -1,0 +1,166 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - link "LRS":
+    - /url: /users/dashboard
+    - img "LRS"
+  - heading "NATIONAL ATTORNEY TITLE" [level=3]
+  - button " Welcome tiuadmin User"
+- list:
+  - listitem:
+    - button " Partners 󰅂"
+  - listitem:
+    - button " Records 󰅂"
+  - listitem:
+    - button " Vendor Management 󰅂"
+  - listitem:
+    - button " Receipt of Exam 󰅂"
+  - listitem:
+    - button " Recording Data 󰅂"
+  - listitem:
+    - button " AOL 󰅂"
+  - listitem:
+    - button " County Cal 󰅂"
+  - listitem:
+    - button " Reports 󰅂"
+  - listitem:
+    - button " Others 󰅂"
+- heading "Create AOL template" [level=4]
+- textbox "NAT File Number"
+- textbox "Partner File Number"
+- textbox "Grantor(s)"
+- textbox "State"
+- textbox "County"
+- button "Quick Search"
+- heading "Partner" [level=2]
+- text: Partner
+- combobox:
+  - option "Select Partner"
+  - option "Partner Test 2"
+  - option "SupportingQATest"
+  - option "TEST_Partner" [selected]
+  - option "TIU QA TEST Partner"
+  - option "TIU QA TEST Partner"
+- strong:
+  - text: Transaction
+  - superscript: "7"
+- combobox:
+  - option "Select Transaction Type" [selected]
+  - option "Purchase Complete"
+  - option "Purchase AOL Only"
+  - option "Refinance Complete"
+  - option "Refinance AOL Only"
+- strong: State
+- textbox
+- strong: NATFileNumber
+- textbox
+- strong: StreetName
+- textbox
+- strong:
+  - text: jurisdiction
+  - superscript: "5"
+- textbox
+- strong:
+  - text: TagNumber
+  - superscript: "4"
+- textbox
+- strong: Grantors
+- textbox
+- heading "Transaction Status" [level=2]
+- text: Pending (Not Created/Sent)
+- radio "Pending (Not Created/Sent)"
+- text: Preliminary AOL Created
+- radio "Preliminary AOL Created" [checked]
+- text: Final AOL Created
+- radio "Final AOL Created"
+- heading "Upload/Add Specific Search" [level=2]
+- strong: Date Uploaded/Added
+- text: "From:"
+- textbox "(yyyy-mm-dd)"
+- text: "To:"
+- textbox "(yyyy-mm-dd)"
+- group:
+  - button "Search"
+- group:
+  - link "Clear":
+    - /url: /files-vendor-assignment/aolindex
+- heading "About Actions:" [level=2]
+- text: 
+- strong: Click to send Preliminary AOL Email (Partner)
+- text: 
+- strong: Click to send Final AOL Email to Attorney
+- text: 
+- strong: Click to Submit Approved AOL to Client
+- button "Update Preliminary AOL"
+- button "Create Final AOL for Attorney"
+- button "Export CSV"
+- text: Show
+- combobox "Show entries":
+  - option "10" [selected]
+  - option "25"
+  - option "50"
+  - option "100"
+  - option "All"
+- text: entries
+- table:
+  - rowgroup:
+    - 'row "NATFileNumber: activate to sort column descending TagNumber4: activate to sort column ascending Transaction7: activate to sort column ascending Grantors: activate to sort column ascending StreetName: activate to sort column ascending jurisdiction5: activate to sort column ascending State: activate to sort column ascending Pre AOL Final AOL Submit AOL FileStartDate Timestamp: activate to sort column ascending Actions"':
+      - cell:
+        - checkbox
+      - 'cell "NATFileNumber: activate to sort column descending"': ▲ NATFileNumber ▼
+      - 'cell "TagNumber4: activate to sort column ascending"':
+        - text: ▲ TagNumber
+        - superscript: "4"
+        - text: ▼
+      - 'cell "Transaction7: activate to sort column ascending"':
+        - text: ▲ Transaction
+        - superscript: "7"
+        - text: ▼
+      - 'cell "Grantors: activate to sort column ascending"': ▲ Grantors ▼
+      - 'cell "StreetName: activate to sort column ascending"': ▲ StreetName ▼
+      - 'cell "jurisdiction5: activate to sort column ascending"':
+        - text: ▲ jurisdiction
+        - superscript: "5"
+        - text: ▼
+      - 'cell "State: activate to sort column ascending"': ▲ State ▼
+      - cell "Pre AOL"
+      - cell "Final AOL"
+      - cell "Submit AOL"
+      - 'cell "FileStartDate Timestamp: activate to sort column ascending"': ▲ FileStartDate Timestamp ▼
+      - columnheader "Actions"
+  - rowgroup:
+    - row "300022 6688991 ( TEST_Partner ) 2 ( Purchase AOL Only ) Type 2 Thomas road Clark OH Yes No No 2025-11-10 13:41:40 Download Preliminary AOL PDF Delete":
+      - cell:
+        - checkbox
+      - cell "300022"
+      - cell "6688991 ( TEST_Partner )"
+      - cell "2 ( Purchase AOL Only )"
+      - cell "Type 2"
+      - cell "Thomas road"
+      - cell "Clark"
+      - cell "OH"
+      - cell "Yes"
+      - cell "No"
+      - cell "No"
+      - cell "2025-11-10 13:41:40"
+      - cell "Download Preliminary AOL PDF Delete":
+        - link "Download Preliminary AOL PDF":
+          - /url: /pdf/generate-pdf/23
+        - link "Preliminary AOL Email":
+          - /url: javascript:void(0)
+        - link "Delete":
+          - /url: javascript:void(null);
+- status: Showing 1 to 1 of 1 entries
+- list:
+  - listitem:
+    - link "Previous":
+      - /url: "#"
+  - listitem:
+    - link "1":
+      - /url: "#"
+  - listitem:
+    - link "Next":
+      - /url: "#"
+- text: "Map Field Help 1: Partner specific fields. These are fields A to Z in \"Map Partner Field\" section 2: FileStartDate 3: PartnerID 4: PartnerFileNumber 5: County 6: Zip 7: TransactionType 8: LoanAmount 9: PurchasePriceConsideration 10: LoanNumber © 2025 NATIONAL ATTORNEY TITLE. All rights reserved."
+```

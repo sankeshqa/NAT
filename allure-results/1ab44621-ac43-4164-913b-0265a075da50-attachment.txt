@@ -1,0 +1,3 @@
+⚠️ Electronic consent alert detected — handling it...
+✅ Clicked first Sign Here
+✅ Clicked Sign Here button #2

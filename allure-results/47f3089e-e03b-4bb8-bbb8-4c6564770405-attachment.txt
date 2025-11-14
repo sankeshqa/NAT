@@ -1,0 +1,13 @@
+❌ Error checking checkbox for: PartnerFileNumber → locator.check: Clicking the checkbox did not change its state
+Call log:
+  - waiting for locator('tr').filter({ hasText: 'PartnerFileNumber' }).first().getByRole('checkbox')
+    - locator resolved to <input value="4" type="checkbox" name="cif_fieldid[]"/>
+  - attempting click action
+    - scrolling into view if needed
+    - done scrolling
+    - forcing action
+    - performing click action
+    - click action done
+    - waiting for scheduled navigations to finish
+    - navigations have finished
+

@@ -1,0 +1,2 @@
+✅ No consent alert — running default signature flow
+✅ Clicked Sign Here button #1

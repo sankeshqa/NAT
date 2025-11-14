@@ -1,0 +1,5 @@
+[warning] [DOM] Found 2 elements with non-unique id #searchBtnId: (More info: https://goo.gl/9p2vKq) %o %o
+[warning] [DOM] Found 2 elements with non-unique id #searchBtnId: (More info: https://goo.gl/9p2vKq) %o %o
+[warning] [DOM] Found 2 elements with non-unique id #searchBtnId: (More info: https://goo.gl/9p2vKq) %o %o
+[warning] [DOM] Found 2 elements with non-unique id #searchBtnId: (More info: https://goo.gl/9p2vKq) %o %o
+[error] Failed to load resource: the server responded with a status of 500 (Internal Server Error)

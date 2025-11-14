@@ -1,0 +1,28 @@
+⚠️ Error during signature step: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#end-of-document-btn-finish')
+    - locator resolved to <button type="button" data-qa="envelope-finish" id="end-of-document-btn-finish" data-track="bottom-finish-button" class="olv-button olv-ignore-transform css-hyj05k">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div role="none" class="css-u8l9f7" data-qa="ersd-modal-scrim"></div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div role="none" class="css-u8l9f7" data-qa="ersd-modal-scrim"></div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    6 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div role="none" class="css-u8l9f7" data-qa="ersd-modal-scrim"></div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+

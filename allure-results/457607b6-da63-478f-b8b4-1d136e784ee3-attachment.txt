@@ -1,0 +1,12 @@
+⚠️ Error during signature step: locator.click: InvalidSelectorError: Error while parsing selector `button:has-text("Sign Here")` - unexpected symbol ":" at position 6
+    at syntaxError (<anonymous>:1682:11)
+    at parseAttributeSelector (<anonymous>:1831:5)
+    at Object.queryAll (<anonymous>:4699:22)
+    at InjectedScript._queryEngineAll (<anonymous>:6536:49)
+    at InjectedScript.querySelectorAll (<anonymous>:6523:30)
+    at eval (eval at evaluate (:291:30), <anonymous>:2:35)
+    at UtilityScript.evaluate (<anonymous>:293:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+Call log:
+  - waiting for button:has-text("Sign Here") >> internal:role=button:has-text("Sign Here")
+

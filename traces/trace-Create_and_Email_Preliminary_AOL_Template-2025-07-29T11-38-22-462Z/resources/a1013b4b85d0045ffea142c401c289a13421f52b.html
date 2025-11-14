@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en" data-layout="horizontal" data-layout-style="" data-layout-position="fixed" data-topbar="light">
+
+<head> 
+    <meta charset="utf-8"/>    <title>Users</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+ 
+    
+	<link rel="stylesheet" href="/assets/libs/jsvectormap/css/jsvectormap.min.css"/>
+     <!--datatable css-->
+     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" /> 
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" /> 
+    <!--datatable responsive css-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css"> 
+   
+    <!-- Head Css -->   
+    <!-- Layout config Js -->
+    
+	<script src="/assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/assets/css/icons.min.css"/>
+	<link rel="stylesheet" href="/assets/css/app.min.css"/>
+	<link rel="stylesheet" href="/assets/css/custom.css"/>
+    <!-- Head Css END --> 
+    <!-- One of the following themes -->
+    <!-----NEW-------->
+    
+	<link rel="stylesheet" href="/assets/libs/%40simonwep/pickr/themes/classic.min.css"/>
+	<link rel="stylesheet" href="/assets/libs/%40simonwep/pickr/themes/monolith.min.css"/>
+	<link rel="stylesheet" href="/assets/libs/%40simonwep/pickr/themes/nano.min.css"/>
+	<link rel="stylesheet" href="/assets/libs/multi.js/multi.min.css"/>
+	<link rel="stylesheet" href="/assets/libs/%40tarekraafat/autocomplete.js/css/autoComplete.css"/>
+       
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<!-----NEW End-------->
+            
+</head>
+<body>
+    <div id="layout-wrapper">
+        <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo" style="padding-top: 5px;">
+                    <span class="logo-lg">
+                        <a href="/users/dashboard"><img src="/img/tenxlogo-svg.jpg" alt="LRS" style="height: 60px;"/></a>
+                    </span> 
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button> 
+                <!-- App Search--> 
+            </div>
+            
+            <div class="head-bottom align-items-center header-center">
+                <h3>NATIONAL ATTORNEY TITLE</h3>
+            </div>
+
+                    </div>
+    </div>
+</header> 
+
+                    
+ 
+               
+        <div class="main-content">
+            <div class="page-content">
+				
+                <div class="container-fluid lrs-frm sml-field">
+
+
+                    
+                                        <div class="login-pg">
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card login-inputs">
+
+            <div class="card-body">
+                <div class="live-preview">
+                    <div class="row gy-4">
+                        <!--<div class="col-xxl-6 col-md-6 col-sm-12 login-lft">
+                            <h2 class="login-heading">
+                            Welcome to the Lender Recording Services, Inc. re:Cord V2.0
+                            Partner Gateway
+                            </h2>
+                            <p class="text-center bold">Partners please login below (..)</p>
+                            <p class="text-center">If you have reached this site in error and are looking to contact Lender Recording Services, please visit LRS' main site located at www.lrsinc.com for information regarding our services.
+                            </p>
+                        </div>-->
+                        <div class="col-xxl-12 col-md-12 col-sm-12 login-rgth">
+                            <div class="user-ico">
+                                <img src="/img/lock.jpg" alt="Login"/>                            </div>
+                            <form method="post" accept-charset="utf-8" action="/users/login?redirect=%2F">                                 
+
+                                <div class="row gy-4">
+                                    <div class="col-xxl-12 col-md-12 col-sm-12">
+                                                                            </div>
+                                    <div class="col-xxl-12 col-md-12 col-sm-12">
+                                        
+                                        <div class="input-container-floating"> 
+
+                                            <input type="text" name="user_username" placeholder="Username" required="required" class="form-control" id="user-username" aria-required="true" aria-label="Username"/> 
+
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-xxl-12 col-sm-12">
+                                        
+                                            <div class="input-container-floating">
+                                                <input type="password" name="password" placeholder="Password" required="required" class="form-control" id="password" aria-required="true" aria-label="Password"/>                                             
+                                            </div>
+                                    </div>
+                                    <div class="col-xxl-12 col-sm-12">
+                                        <div class="submit">
+                                            <div class="submit"><input type="submit" class="btn btn-success w-100" value="Login"/></div> 
+                                        </div>                        
+                                    </div>
+                                    <div class="col-xxl-12 col-sm-12">
+                                        <a href="/users/forgot-password" class="text-muted">Forgot password?</a>                                    </div>
+                                </div>
+
+
+                            </form>                            <!--end row-->
+                        </div>
+                        <!------col right---->
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+    </div>
+</div>
+<!--end row-->
+</div>                </div>
+            </div>
+        <div id="footer" class="footer">
+	<!--<div class="row">
+		<div class="col-md-4 col-sm-12">
+		<span class="footermsg">
+			  Lender Recording Services, Inc.<br>
+		5455 Detroit Rd, Suite B<br>
+		Sheffield Village, Ohio 44054<br>
+		
+
+		</span>
+		</div>
+		<div class="col-md-4 col-sm-12">
+		<span class="footermsg">
+
+		440.716-1820 / Fax 440.869-0720<br>
+		customerservice@lrsinc.com<br>
+
+		</span>
+		</div>
+		<div class="col-md-4 col-sm-12">
+		 <span>
+				<a href="http://www.lrsinc.com" title="LRS" target="_blank" class="color462e26">www.lrsinc.com</a> <a class="color462e26" href="#" onclick="window.open('/privacy.html','Privacy Information',
+		'height=600,width=600,toolbar=no,directories=no,status=no,linemenubar=no,scrollbars=yes,resizable=yes ,modal=yes');" title="Privacy Information">Privacy Policy</a><br>
+		© 2012 Lender Recording Services. All Rights Reserved.<br>
+		<a title="W3C HTML Validation" href="http://validator.w3.org/" target="_blank" class="color462e26">XHTML</a> | <a title="W3C CSS Validation" href="http://jigsaw.w3.org/css-validator/validator-uri.html" target="_blank" class="color462e26">CSS</a> | <a title="Web Content Accessibility Guidelines" href="http://www.w3.org/TR/WCAG10/" target="_blank" class="color462e26">WCAG</a>
+			  </span>
+		</div>-->
+      
+	<div class="row">
+		<div class="col-md-12 col-sm-12">
+			<span class="footermsg">© 2024 NATIONAL ATTORNEY TITLE. All rights reserved.</span>
+		</div>
+	</div>
+	 
+</div> 
+        </div>
+    </div>
+    
+    <!--<script type="text/javascript">
+        //var SITE_URL_JS = '';
+    </script>-->
+
+    
+	<script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="/assets/libs/feather-icons/feather.min.js"></script>
+	<script src="/assets/libs/node-waves/waves.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jSignature/2.1.2/jSignature.min.js"></script>
+
+    <!--datatable js-->
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+   
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script> 
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script> 
+   
+ 
+    
+	<script src="/assets/js/app.js"></script>
+ <!--"/assets/js/pages/datatables.init",-->
+
+<!-----NEW-------->
+    <!--select2 cdn-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+         <!-- multi.js Export setting pg-->   <!-- init js Export setting pg -->
+    
+        <!-----NEW End--------> 
+    
+	<script src="/assets/libs/multi.js/multi.min.js"></script>
+	<script src="/assets/js/pages/form-advanced.init.js"></script>
+	<script src="/assets/js/lrscommon.js"></script>
+	
+</body>
+</html>

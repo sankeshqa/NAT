@@ -1,0 +1,129 @@
+⚠️ Failed to click Sign button #2: locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('button:has-text("Sign Here")').first()
+    - locator resolved to <button type="button" aria-invalid="true" class="tab-button inked" olive-menu-initialized="true" olive-menu-position="below left" id="tab-form-element-f33fcc83-8dac-4752-b45c-95382f7b9190" data-qa="signature-tab-required-f33fcc83-8dac-4752-b45c-95382f7b9190" olive-menu-trigger="signature-tab-menu-f33fcc83-8dac-4752-b45c-95382f7b9190">…</button>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="css-fv3lde">…</div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div role="none" class="css-1cw8dvn" data-qa="adopt-signature-modal-scrim"></div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="css-fv3lde">…</div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 100ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <h2 data-qa="adopt-dialog-title-heading-tag" class="olv-heading olv-ignore-transform css-1krv5ft">…</h2> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div role="none" class="css-1cw8dvn" data-qa="adopt-signature-modal-scrim"></div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="css-fv3lde">…</div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <h2 data-qa="adopt-dialog-title-heading-tag" class="olv-heading olv-ignore-transform css-1krv5ft">…</h2> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <h2 data-qa="adopt-dialog-title-heading-tag" class="olv-heading olv-ignore-transform css-1krv5ft">…</h2> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+⚠️ Error during signature step: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#end-of-document-btn-finish')
+    - locator resolved to <button type="button" data-qa="envelope-finish" id="end-of-document-btn-finish" data-track="bottom-finish-button" class="olv-button olv-ignore-transform css-hyj05k">…</button>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="css-8ec0sn">…</div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div role="none" class="css-1cw8dvn" data-qa="adopt-signature-modal-scrim"></div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="css-8ec0sn">…</div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    4 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="css-8ec0sn">…</div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div role="none" class="css-1cw8dvn" data-qa="adopt-signature-modal-scrim"></div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="css-8ec0sn">…</div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="css-8ec0sn">…</div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="css-8ec0sn">…</div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div role="none" class="css-1cw8dvn" data-qa="adopt-signature-modal-scrim"></div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+

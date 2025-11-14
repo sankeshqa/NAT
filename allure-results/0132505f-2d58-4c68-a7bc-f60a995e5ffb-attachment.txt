@@ -1,0 +1,2 @@
+✅ No consent alert — running default signature flow
+✅ No more Sign Here buttons visible.

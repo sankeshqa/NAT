@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en" data-layout="horizontal" data-layout-style="" data-layout-position="fixed" data-topbar="light">
+
+<head> 
+    <meta charset="utf-8"/>    <title>Users</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+ 
+    
+	<link rel="stylesheet" href="/assets/libs/jsvectormap/css/jsvectormap.min.css"/>
+     <!--datatable css-->
+     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" /> 
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" /> 
+    <!--datatable responsive css-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css"> 
+   
+    <!-- Head Css -->   
+    <!-- Layout config Js -->
+    
+	<script src="/assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/assets/css/icons.min.css"/>
+	<link rel="stylesheet" href="/assets/css/app.min.css"/>
+	<link rel="stylesheet" href="/assets/css/custom.css"/>
+    <!-- Head Css END --> 
+    <!-- One of the following themes -->
+    <!-----NEW-------->
+    
+	<link rel="stylesheet" href="/assets/libs/%40simonwep/pickr/themes/classic.min.css"/>
+	<link rel="stylesheet" href="/assets/libs/%40simonwep/pickr/themes/monolith.min.css"/>
+	<link rel="stylesheet" href="/assets/libs/%40simonwep/pickr/themes/nano.min.css"/>
+	<link rel="stylesheet" href="/assets/libs/multi.js/multi.min.css"/>
+	<link rel="stylesheet" href="/assets/libs/%40tarekraafat/autocomplete.js/css/autoComplete.css"/>
+       
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<!-----NEW End-------->
+            
+</head>
+<body>
+    <div id="layout-wrapper">
+        <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo" style="padding-top: 5px;">
+                    <span class="logo-lg">
+                        <a href="/users/dashboard"><img src="/img/tenxlogo-svg.jpg" alt="LRS" style="height: 60px;"/></a>
+                    </span> 
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button> 
+                <!-- App Search--> 
+            </div>
+            
+            <div class="head-bottom align-items-center header-center">
+                <h3>NATIONAL ATTORNEY TITLE</h3>
+            </div>
+
+                        <div class="d-flex align-items-center">
+                 
+                    <!--<div class="ms-1 header-item d-none d-sm-flex">
+                        <div class="input-container-floating">
+                        <form method="post" accept-charset="utf-8" horizontal="1" action="/users/dashboard"> 
+                            <label for="basiInput" class="form-label">System Status</label>
+                            <div class="input select"><select name="archive" onchange="this.form.submit()" class="form-select form-select-sm" aria-label=".form-select-sm example" id="archive"><option value="Current">Current</option><option value="Archive">Archive ( &lt; 2020)</option></select></div>						</form> 
+                        </div>
+                    </div> -->
+                 
+                 
+                <div class="dropdown ms-sm-3 header-item topbar-user">
+                    <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex align-items-center"> 
+                       
+                            <span class="text-start ms-xl-2 welcome-msg">
+                                <i class="ri-account-circle-line"></i>
+                              <span class="welcome-user">
+                                <span class="d-none d-xl-inline-block ms-1 fw-semibold user-name-text">Welcome </span>
+                                <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">tiuadmin User</span>
+                              </span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- <div class="input-container-floating sys-status-menu"> 
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example" fdprocessedid="evwp6k">
+                                <option selected="">Current</option>
+                                <option value="1">Archive</option> 
+                            </select> 
+					    </div> -->
+
+                        <a href="/users/dashboard" class="dropdown-item"><i class="mdi mdi-home text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-home">Home</span></a>                        <a href="/users/logout" class="dropdown-item"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a> 
+                     
+                    </div>
+                </div>
+                
+            </div>
+                    </div>
+    </div>
+</header> 
+
+                    
+ 
+                <!-- ========== App Menu ========== -->
+<div class="app-menu navbar-menu">
+    <div id="scrollbar">
+        <div class="container-fluid">
+            <div id="two-column-menu"></div>
+            <ul class="navbar-nav" id="navbar-nav">
+                <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarPartners" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPartners">
+                        <i class="ri-dashboard-2-line"></i> <span data-key="t-partners">Partners</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarPartners">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+								<a href="/company-mst" class="nav-link" data-key="t-partnerlisting">List Partners</a>                            </li> 
+                            <li class="nav-item">
+                                <a href="/users/partner-user" class="nav-link" data-key="t-userlisting">List Partner Users</a>                            </li>
+                            <!-- <li class="nav-item">
+                                                             
+                            </li> --> 
+                            <li class="nav-item">
+                                <a href="/fields-mst/map-company-field" class="nav-link" data-key="t-mappartner">Map Partners Fields</a>                            </li>
+                            <li class="nav-item">
+                                <a href="/fields-mst/import-company-field" class="nav-link" data-key="t-importsheetsetting">Import Sheet Setting</a>                            </li> 
+                            <li class="nav-item">
+                                <a href="/company-api-keys" class="nav-link" data-key="t-partnerapikey">Manage Partner API Key</a>                            </li> 
+							
+                        </ul>
+                    </div>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarRecords" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRecords">
+                        <i class="las la-record-vinyl"></i> <span data-key="t-records">Records</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarRecords">
+                        <ul class="nav nav-sm flex-column"> 
+                            <li class="nav-item">
+								<a href="/files-main-data/import-records" class="nav-link" data-key="t-uploadcsv">Upload CSV</a>                            </li>
+							<li class="nav-item">
+								<a href="/files-vendor-assignment/add-records" class="nav-link" data-key="t-add">Add Record</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-vendor-assignment" class="nav-link" data-key="t-index">Record Listing</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-vendor-assignment/attindex" class="nav-link" data-key="t-index">Attorney Assignment</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-vendor-assignment/essindex" class="nav-link" data-key="t-index">Escrow Service Assignment</a>                            </li>
+							<!--<li class="nav-item">
+								<a href="/files-vendor-assignment/search-records" class="nav-link" data-key="t-search-records">Search Record</a>                            </li>-->
+                            <!-- <li class="nav-item">
+								<a href="/files-checkin-data/sample-import" class="nav-link" data-key="t-downloadcsv">Download Sample Import CSV</a>                            </li> -->
+                            <li class="nav-item">
+								<a href="/master-data/master-search" class="nav-link" data-key="t-uploadcsv">Master Search</a>                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarRecords" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRecords">
+                        <i class="ri-settings-2-line"></i> <span data-key="t-records">Vendor Management</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarRecords">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+								<a href="/vendor" class="nav-link" data-key="t-list">Vendors List</a>                            </li>
+                            <li class="nav-item">
+								<a href="/vendor/add" class="nav-link" data-key="t-index">Add Vendor</a>                            </li>
+							<li class="nav-item">
+								<a href="/vusers" class="nav-link" data-key="t-add">Vendor User List</a>                            </li>
+                            <li class="nav-item">
+								<a href="/vusers/vendor-add" class="nav-link" data-key="t-add">Add Vendor User</a>                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <!-- <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarRecords" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRecords">
+                        <i class="ri-account-circle-line"></i> <span data-key="t-records">Masters</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarRecords">
+                        <ul class="nav nav-sm flex-column"> 
+                            <li class="nav-item">
+								<a href="/master-data/master-search" class="nav-link" data-key="t-uploadcsv">Search Record</a>                            </li>
+							
+							
+                        </ul>
+                    </div>
+                </li> -->
+                
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarRecords" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRecords">
+                        <i class="ri-settings-2-line"></i> <span data-key="t-records"><!-- Receipt of Exam -->AOL Processing</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarRecords">
+                        <ul class="nav nav-sm flex-column"> 
+                            <li class="nav-item">
+                                <a href="/files-exam-receipt" class="nav-link" data-key="t-receipt">Receipt of Exam</a>                            </li>
+                            <li class="nav-item">
+                                <a href="/files-exam-receipt/upload" class="nav-link" data-key="t-receipt">Upload Receipt of Exam CSV</a>                            </li>
+							<li class="nav-item">
+                                <a href="/fields-mst-exam/map-company-field" class="nav-link" data-key="t-receipt">Map Receipt of Exam Fields</a>                            </li>
+							<li class="nav-item">
+                                <a href="/fields-mst-exam/import-company-field" class="nav-link" data-key="t-receipt">Import Receipt of Exam Fields</a>                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarRecords" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRecords">
+                        <i class="las la-file-upload"></i> <span data-key="t-records">Recording Data</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarRecords">
+                        <ul class="nav nav-sm flex-column"> 
+                            <li class="nav-item">
+                                <a href="/files-recording-data" class="nav-link" data-key="t-receipt">Recording Data</a>                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </li>
+                
+				<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarRecords" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRecords">
+                        <i class="ri-account-circle-line"></i> <span data-key="t-records">AOL</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarRecords">
+                        <ul class="nav nav-sm flex-column"> 
+                            <li class="nav-item">
+								<a href="/files-vendor-assignment/aolindex" class="nav-link" data-key="t-index">Create AOL Template</a>                            </li>
+                            <li class="nav-item">
+								<a href="/reviews/list" class="nav-link" data-key="t-index">Attorney Reviews</a>                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarShip" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarShip">
+                        <i class="ri-account-circle-line"></i> <span data-key="t-ship">County Cal</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarShip">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">								
+								<a href="/files-accounting-data" class="nav-link" data-key="t-accountingentry">County Cal</a>                            </li>                            
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarCal" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCal">
+                        <i class="ri-settings-2-line"></i> <span data-key="t-reports">Reports</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarCal">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">								
+																	<li class="nav-item">
+										<a href="/fields-mst/export-company-field" class="nav-link" data-key="t-exportsheetsetting">Generate Report</a>									</li> 
+								                            </li>                            
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarOthers" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarOthers">
+                        <i class="ri-settings-2-line"></i> <span data-key="t-others">Others</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarOthers">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="/" class="nav-link" data-key="t-userlisting">System Users</a>                            </li> 
+                            <li class="nav-item">
+                                <a href="/transaction-type-mst" class="nav-link" data-key="t-userlisting">Transaction Type Master</a>                            </li>
+                        </ul>
+                    </div>
+                </li> 
+                
+                <!--<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarOpt" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarOpt">
+                        <i class="ri-dashboard-2-line"></i> <span data-key="t-opt">Operations</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarOpt">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+								<a href="/files-qc-data" class="nav-link" data-key="t-rejections">Rejection Management</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-accounting-data" class="nav-link" data-key="t-accountingentry">Accounting Entry</a>                            </li>
+                            <li class="nav-item">
+								<a href="/import-accounting-info" class="nav-link" data-key="t-ImportAccountingInfo">Upload Accounting Info (Import Accounting CSV)</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-accounting-data/account-sheet" class="nav-link" data-key="t-accountingseet">Generate Accounting Sheet</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-accounting-data/estimated-fee-sheet" class="nav-link" data-key="t-estimatedfeesheet">Estimated Fee Sheet</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-accounting-data/pending-file-estimate-sheet" class="nav-link" data-key="t-pendingfileestimatesheet">AF Pending File Estimate Sheet</a>                            </li>
+                            <li class="nav-item">
+								<a href="/csc-accounting" class="nav-link" data-key="t-cscaccounting">CSC Accounting / RecInfo Upload</a>                            </li><li class="nav-item">
+								<a href="/simplifile-accounting" class="nav-link" data-key="t-simplifileaccounting">Simplifile Accounting / RecInfo Upload</a>                            </li>
+                            <li class="nav-item">
+                                <a href="/huntington-accounting" class="nav-link" data-key="t-huntingtonaccounting">Huntington Accounting / RecInfo Upload</a>                            </li>
+                        </ul>
+                    </div>
+                </li>-->
+				
+                <!--<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarShip" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarShip">
+                        <i class="las la-shipping-fast"></i> <span data-key="t-ship">Ship to County</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarShip">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+								<a href="/files-shipto-county-data" class="nav-link" data-key="t-sendtoCounty">Send to County</a>                            </li>
+                            <li class="nav-item">
+								<a href="/import-shipping-info" class="nav-link" data-key="t-esub">Ship to County eSub upload</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-shipto-county-data/generate-shipping-sheet" class="nav-link" data-key="t-shipsheet">Generate Shipping CSV Sheet</a>                            </li>
+                        </ul>
+                    </div>
+                </li>-->
+
+                <!--<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarScanning" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarScanning">
+                    <i class="las la-barcode"></i> <span data-key="t-Scanning">Scanning Recognition</span> 
+                    </a>
+ 
+                    <div class="collapse menu-dropdown" id="sidebarScanning">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+								<a href="/files-recording-data/scanning-recognition" class="nav-link" data-key="t-scann">Scanning Recognition</a>                            </li>
+ 
+                            <li class="nav-item">
+								<a href="/files-recording-data/initiate-coversheet" class="nav-link" data-key="t-inCoversheet">Initiate Coversheet</a>                            </li>
+ 
+                        </ul>
+                    </div>
+                </li>-->
+
+                <!--<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarRecording" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRecording">
+                        <i class="las la-record-vinyl"></i> <span data-key="t-recording">Recording</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarRecording">
+                        <ul class="nav nav-sm flex-column">
+                           
+                            <li class="nav-item">
+								<a href="/files-recording-data/index-new" class="nav-link" data-key="t-keywithimage">Key With Image</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-recording-data/recording-research" class="nav-link" data-key="t-reseach">Research</a>                            </li>
+                            <li class="nav-item">
+								<a href="/import-recording-info" class="nav-link" data-key="t-importrecordinginfo">Upload Recording Info (Import Recording CSV)</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-recording-data/recording-csv" class="nav-link" data-key="t-recordingcsv">Generate CSV</a> 
+                            </li>
+                            <li class="nav-item">
+								<a href="/files-recording-data/recordingkey-no-image" class="nav-link" data-key="t-keynoimage">Key No Image</a> 
+                            </li>
+							<li class="nav-item">
+								<a href="/files-recording-data/recording-management-report" class="nav-link" data-key="t-recordingManagementReport">Recording Management Report</a> 
+                            </li>
+							<li class="nav-item">
+								<a href="/files-recording-data/recording-confirmation-coversheets" class="nav-link" data-key="t-recordingConfirmationCoversheets">Generate Recording Confirmation Coversheets</a>                            </li>
+                            
+                            <li class="nav-item"> 
+								<a href="/files-returned2partner/return-partner-new" class="nav-link" data-key="t-returntopartnernew">Returned To Partner</a>                            </li>
+                            <li class="nav-item">
+                                <a href="/master-data/complete-order" class="nav-link" data-key="t-userlisting">Completed Order</a>                            </li> 
+							<li class="nav-item">
+								<a href="/files-recording-data/manual-confirmation-coversheets" class="nav-link" data-key="t-manualConfirmationCoversheets">Manual Confirmation Coversheets</a>                            </li>
+							<li class="nav-item">
+								<a href="/files-recording-data/new-confirmation-coversheets" class="nav-link" data-key="t-newConfirmationCoversheets">New Confirmation Coversheets</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-returned2partner/generate-returnfile-sheet" class="nav-link" data-key="t-generatereturnfilesheet">Generate Return File Sheet</a>                            </li>
+                        </ul>
+                    </div> 
+                </li>-->
+                
+				<!--<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarOthers" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarOthers">
+                        <i class="ri-settings-2-line"></i> <span data-key="t-others">Others</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarOthers">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="/" class="nav-link" data-key="t-userlisting">System Users</a>                            </li> 
+                            <li class="nav-item">
+                                <a href="/users/change-password" class="nav-link">Change Password</a>                            </li>
+							<li class="nav-item">
+                                <a href="/fedex-shipping-setting" class="nav-link">Shipping Setting</a>                            </li>
+							<li class="nav-item">
+                                <a href="/charge-master" class="nav-link">Banking Detail Charge Type</a>                            </li> 
+                            <li class="nav-item">
+                                <a href="/document-type-mst" class="nav-link" data-key="t-userlisting">Document Type Master</a>                            </li>
+                            <li class="nav-item">
+                                <a href="/county-mst" class="nav-link" data-key="t-createuser">List County</a> 
+                            </li> 
+							<li class="nav-item">
+                                <a href="/document-countycal-mst" class="nav-link" data-key="t-userlisting">County Cal Document Type Master</a>                            </li>
+							<li class="nav-item">
+                                <a href="/document-csc-mst" class="nav-link" data-key="t-userlisting">CSC Document Type Master</a>                            </li>
+							<li class="nav-item">
+                                <a href="/document-simplifile-mst" class="nav-link" data-key="t-userlisting">Simplifile Document Type Master</a>                            </li> 
+                        </ul>
+                    </div>
+                </li> -->
+				
+                <!--<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarMasters" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMasters">
+                        <i class="ri-account-circle-line"></i><span data-key="t-masters">Masters</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarMasters">
+                        <ul class="nav nav-sm flex-column">
+							<li class="nav-item">
+                                <a href="/master-data/master-search" class="nav-link">Master Search</a>                            </li>
+							<li class="nav-item">
+                                <a href="/master-data/management-report" class="nav-link">Management Report</a>                            </li>
+                        </ul>
+                    </div>
+                </li>-->
+               
+                <!--<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarStatistic" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarStatistic">
+                        <i class="ri-account-circle-line"></i><span data-key="t-statistic">Statistics</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarStatistic">
+                        <ul class="nav nav-sm flex-column">
+							<li class="nav-item">
+                                <a href="/statistics/checkin-to-submission" class="nav-link">Checkin Date to Submission Report</a>                            </li>
+                            <li class="nav-item">
+                                <a href="/statistics/checkin-to-recording" class="nav-link">Checkin Date to Recording Information</a>                            </li>
+                            <li class="nav-item">
+                                <a href="/statistics/open-rejected-status" class="nav-link">Open Rejected Status</a>                            </li>
+                        </ul>
+                    </div>
+                </li>-->
+            </ul>
+        </div>
+        <!-- Sidebar -->
+    </div>
+    <div class="sidebar-background"></div>
+</div>
+<!-- Left Sidebar End -->
+<!-- Vertical Overlay-->
+<div class="vertical-overlay"></div> 
+               
+        <div class="main-content">
+            <div class="page-content">
+				
+                <div class="container-fluid lrs-frm sml-field">
+
+
+                                            <!-- Page title and quick search -->
+                        <div class="row" style="margin-bottom:0px;">
+                            <div class="col-12">
+                                <div class="title-bar">
+                                    <div class="page-title-box-lrs d-sm-flex align-items-center justify-content-between">
+                                        <h4 class="mb-sm-0">Home</h4>
+                                        <!-- (Use This Section to import partner CSV sheet.) -->
+                                    </div>
+                                    <div class="input-container-floating -floating search-section">
+    <form method="post" accept-charset="utf-8" horizontal="1" action="/master-data/advance-search" action="/users/dashboard">        <input type="text" name="NATFileNumber" class="form-control" id="NATFileNumber" aria-required="true" Placeholder="NAT File Number">
+        <input type="text" name="PartnerFileNumber" class="form-control" id="PartnerFileNumber" aria-required="true" Placeholder="Partner File Number">
+        <input type="text" name="Grantors" class="form-control" id="mortgagorgrantor" aria-required="true" Placeholder="Grantor(s)">
+        <input type="text" name="State" class="form-control" id="State" aria-required="true" Placeholder="State">
+        <input type="text" name="County" class="form-control" id="County" aria-required="true" Placeholder="County">
+        <div class="submit">
+            <input type="submit" id="searchBtnId" class="btn btn-success" style="padding:3px 10px!important;" value="Quick Search">
+                    </div>
+    </form></div> 
+                                </div>
+                            </div>
+                        </div>
+                    
+                                        <div class="row">
+    <div class="col-xxl-12 col-md-12 col-sm-12">
+        <div class="card"> 
+            <div class="card-body">
+                <div class="live-preview ">
+                
+                    <div class="row dash-section">
+                        <div class="col-xxl-3 col-md-3 col-sm-12 ico-section">
+                            <div class="dash-container">
+                                <div class="ico-container"><i class="las la-search"></i></div>
+                                <h2><a href="/master-data/master-search">Master Search</a></h2>
+                            </div>
+                        </div>
+                        <!-- <div class="col-xxl-3 col-md-3 col-sm-12 ico-section">
+                            <div class="dash-container">
+                                <div class="ico-container"><i class="las la-handshake"></i></div>
+                                <h2><a href="/company-mst">Partners</a></h2>
+                            </div>
+                        </div> -->
+                        <div class="col-xxl-3 col-md-3 col-sm-12 ico-section">
+                            <div class="dash-container">
+                                <div class="ico-container"><i class="las la-save"></i></div>
+                                <h2><a href="/files-vendor-assignment">Records</a></h2>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-3 col-sm-12 ico-section">
+                            <div class="dash-container">
+                                <div class="ico-container"><i class="las la-save"></i></div>
+                                <h2><a href="/fields-mst/export-company-field">Reports</a></h2>
+                            </div>
+                        </div>
+                        <!--<div class="col-xxl-3 col-md-3 col-sm-12 ico-section">
+                            <div class="dash-container">
+                                <div class="ico-container"><i class="las la-edit"></i></div>
+                                <h2><a href="/files-qc-data">Operations</a></h2>
+                            </div>
+                        </div><div class="col-xxl-3 col-md-3 col-sm-12 ico-section">
+                            <div class="dash-container">
+                                <div class="ico-container"><i class="las la-shipping-fast"></i></div>
+                                <h2><a href="/files-shipto-county-data">Shipping</a></h2>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-3 col-sm-12 ico-section">
+                            <div class="dash-container">
+                                <div class="ico-container"><i class="las la-clipboard"></i></div>
+                                <h2><a href="/files-recording-data">Recording Entry</a></h2>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-3 col-sm-12 ico-section">
+                            <div class="dash-container">
+                                <div class="ico-container"><i class="las la-file-alt"></i><span class="doc"><i class="las la-undo"></i> </span></div>
+                                <h2><a href="/files-returned2partner">Returned Docs</a></h2>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-3 col-sm-12 ico-section">
+                            <div class="dash-container">
+                                <div class="ico-container"><i class="las la-clipboard-check"></i></div>
+                                <h2><a href="/master-data/complete-order">Completed Orders</a></h2>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-3 col-sm-12 ico-section">
+                            <div class="dash-container">
+                                <div class="ico-container"><i class="las la-chart-bar"></i></div>
+                                <h2><a href="/statistics/checkin-to-submission">Checkin Date to Submission Report</a></h2>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-3 col-sm-12 ico-section">
+                            <div class="dash-container">
+                                <div class="ico-container"><i class="las la-chart-area"></i></div>
+                                <h2><a href="/statistics/checkin-to-recording">Checkin Date to Recording Information</a></h2>
+                            </div>
+                        </div>-->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+         
+    </div>
+</div>                </div>
+            </div>
+        <div id="footer" class="footer">
+	<!--<div class="row">
+		<div class="col-md-4 col-sm-12">
+		<span class="footermsg">
+			  Lender Recording Services, Inc.<br>
+		5455 Detroit Rd, Suite B<br>
+		Sheffield Village, Ohio 44054<br>
+		
+
+		</span>
+		</div>
+		<div class="col-md-4 col-sm-12">
+		<span class="footermsg">
+
+		440.716-1820 / Fax 440.869-0720<br>
+		customerservice@lrsinc.com<br>
+
+		</span>
+		</div>
+		<div class="col-md-4 col-sm-12">
+		 <span>
+				<a href="http://www.lrsinc.com" title="LRS" target="_blank" class="color462e26">www.lrsinc.com</a> <a class="color462e26" href="#" onclick="window.open('/privacy.html','Privacy Information',
+		'height=600,width=600,toolbar=no,directories=no,status=no,linemenubar=no,scrollbars=yes,resizable=yes ,modal=yes');" title="Privacy Information">Privacy Policy</a><br>
+		© 2012 Lender Recording Services. All Rights Reserved.<br>
+		<a title="W3C HTML Validation" href="http://validator.w3.org/" target="_blank" class="color462e26">XHTML</a> | <a title="W3C CSS Validation" href="http://jigsaw.w3.org/css-validator/validator-uri.html" target="_blank" class="color462e26">CSS</a> | <a title="Web Content Accessibility Guidelines" href="http://www.w3.org/TR/WCAG10/" target="_blank" class="color462e26">WCAG</a>
+			  </span>
+		</div>-->
+      
+	<div class="row">
+		<div class="col-md-12 col-sm-12">
+			<span class="footermsg">© 2024 NATIONAL ATTORNEY TITLE. All rights reserved.</span>
+		</div>
+	</div>
+	 
+</div> 
+        </div>
+    </div>
+    
+    <!--<script type="text/javascript">
+        //var SITE_URL_JS = '';
+    </script>-->
+
+    
+	<script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="/assets/libs/feather-icons/feather.min.js"></script>
+	<script src="/assets/libs/node-waves/waves.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jSignature/2.1.2/jSignature.min.js"></script>
+
+    <!--datatable js-->
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+   
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script> 
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script> 
+   
+ 
+    
+	<script src="/assets/js/app.js"></script>
+ <!--"/assets/js/pages/datatables.init",-->
+
+<!-----NEW-------->
+    <!--select2 cdn-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+         <!-- multi.js Export setting pg-->   <!-- init js Export setting pg -->
+    
+        <!-----NEW End--------> 
+    
+	<script src="/assets/libs/multi.js/multi.min.js"></script>
+	<script src="/assets/js/pages/form-advanced.init.js"></script>
+	<script src="/assets/js/lrscommon.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,2 @@
+[log] [Object, Object, Object, Object]
+[log] [Object, Object, Object, Object]

@@ -1,0 +1,8 @@
+✅ Clicked first Sign Here
+✅ Clicked Sign Here button #2
+✅ Clicked Sign Here button #3
+✅ Clicked Sign Here button #4
+✅ Clicked Sign Here button #5
+✅ Clicked Sign Here button #6
+✅ Clicked Sign Here button #7
+✅ Clicked Finish

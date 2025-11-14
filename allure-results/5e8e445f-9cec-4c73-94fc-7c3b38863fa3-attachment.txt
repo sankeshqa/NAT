@@ -1,0 +1,18 @@
+⚠️ Failed to click Sign button #1: locator.click: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('button:has-text("Sign Here")').first()
+    - locator resolved to <button disabled type="button" tabindex="-1" aria-invalid="true" class="tab-button inked" data-tabindex-removed="true" olive-menu-initialized="true" olive-menu-position="below left" id="tab-form-element-7d9ab914-285c-4b63-97ff-dbd8a2cd3b6e" data-qa="signature-tab-required-7d9ab914-285c-4b63-97ff-dbd8a2cd3b6e" olive-menu-trigger="signature-tab-menu-7d9ab914-285c-4b63-97ff-dbd8a2cd3b6e">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    9 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 500ms
+

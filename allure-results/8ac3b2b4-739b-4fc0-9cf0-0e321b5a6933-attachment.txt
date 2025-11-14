@@ -1,0 +1,4 @@
+⚠️ Electronic consent alert detected — handling it...
+✅ Clicked first Sign Here
+✅ Clicked Adopt and Sign
+✅ Alert flow completed and document signed.

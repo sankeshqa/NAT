@@ -1,0 +1,7 @@
+[error] Pattern attribute value [A-Za-z0-9 _@.-/$%#()]+ is not a valid regular expression: Uncaught SyntaxError: Invalid regular expression: /[A-Za-z0-9 _@.-/$%#()]+/v: Invalid character in character class
+[error] Pattern attribute value [A-Za-z0-9 _@.-/$%#()]+ is not a valid regular expression: Uncaught SyntaxError: Invalid regular expression: /[A-Za-z0-9 _@.-/$%#()]+/v: Invalid character in character class
+[error] Pattern attribute value [A-Za-z0-9 _@.-/$%#()]+ is not a valid regular expression: Uncaught SyntaxError: Invalid regular expression: /[A-Za-z0-9 _@.-/$%#()]+/v: Invalid character in character class
+[error] Pattern attribute value [A-Za-z0-9 _@.-/$%#()]+ is not a valid regular expression: Uncaught SyntaxError: Invalid regular expression: /[A-Za-z0-9 _@.-/$%#()]+/v: Invalid character in character class
+[error] Pattern attribute value [A-Za-z0-9 _@.-/$%#()]+ is not a valid regular expression: Uncaught SyntaxError: Invalid regular expression: /[A-Za-z0-9 _@.-/$%#()]+/v: Invalid character in character class
+[error] Pattern attribute value [A-Za-z0-9 _@.-/$%#()]+ is not a valid regular expression: Uncaught SyntaxError: Invalid regular expression: /[A-Za-z0-9 _@.-/$%#()]+/v: Invalid character in character class
+[error] Pattern attribute value [A-Za-z0-9 _@.-/$%#()]+ is not a valid regular expression: Uncaught SyntaxError: Invalid regular expression: /[A-Za-z0-9 _@.-/$%#()]+/v: Invalid character in character class

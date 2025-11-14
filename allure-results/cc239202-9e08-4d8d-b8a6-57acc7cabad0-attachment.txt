@@ -1,0 +1,4 @@
+⚠️ Error during signature step: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('button').getByRole('button', { name: 'Required - Sign Here' })
+

@@ -1,0 +1,301 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - link "LRS":
+    - /url: /users/dashboard
+    - img "LRS"
+  - heading "NATIONAL ATTORNEY TITLE" [level=3]
+  - button " Welcome tiuadmin User"
+- list:
+  - listitem:
+    - button " Partners 󰅂"
+  - listitem:
+    - button " Records 󰅂"
+  - listitem:
+    - button " Vendor Management 󰅂"
+  - listitem:
+    - button " Receipt of Exam 󰅂"
+  - listitem:
+    - button " Recording Data 󰅂"
+  - listitem:
+    - button " AOL 󰅂"
+  - listitem:
+    - button " County Cal 󰅂"
+  - listitem:
+    - button " Reports 󰅂"
+  - listitem:
+    - button " Others 󰅂"
+- heading "Record Listing - Assign Attorney" [level=4]
+- textbox "NAT File Number"
+- textbox "Partner File Number"
+- textbox "Grantor(s)"
+- textbox "State"
+- textbox "County"
+- button "Quick Search"
+- heading "Partner" [level=2]
+- text: Partner
+- combobox:
+  - option "Select Partner"
+  - option "Partner Test 2"
+  - option "SupportingQATest"
+  - option "TEST_Partner" [selected]
+  - option "TIU QA TEST Partner"
+  - option "TIU QA TEST Partner"
+- strong:
+  - text: Transaction
+  - superscript: "7"
+- combobox:
+  - option "Select Transaction Type" [selected]
+  - option "Purchase Complete"
+  - option "Purchase AOL Only"
+  - option "Refinance Complete"
+  - option "Refinance AOL Only"
+- strong: State
+- textbox
+- strong: NATFileNumber
+- textbox
+- strong: StreetName
+- textbox
+- strong:
+  - text: jurisdiction
+  - superscript: "5"
+- textbox
+- strong:
+  - text: TagNumber
+  - superscript: "4"
+- textbox
+- strong: Grantors
+- textbox
+- heading "Transaction Status" [level=2]
+- text: Pending
+- radio "Pending"
+- text: Assigned
+- radio "Assigned"
+- text: All
+- radio "All" [checked]
+- heading "Upload/Add Specific Search" [level=2]
+- strong: Date Uploaded/Added
+- text: "From:"
+- textbox "(yyyy-mm-dd)"
+- text: "To:"
+- textbox "(yyyy-mm-dd)"
+- group:
+  - button "Search"
+- group:
+  - link "Clear":
+    - /url: /files-vendor-assignment/attindex
+- button "Assign Attorney"
+- button "Export CSV"
+- text: Show
+- combobox "Show entries":
+  - option "10" [selected]
+  - option "25"
+  - option "50"
+  - option "100"
+  - option "All"
+- text: entries
+- table:
+  - rowgroup:
+    - 'row "NATFileNumber: activate to sort column descending TagNumber4: activate to sort column ascending Attorney Name: activate to sort column ascending Transaction7: activate to sort column ascending Grantors: activate to sort column ascending StreetName: activate to sort column ascending jurisdiction5: activate to sort column ascending State: activate to sort column ascending AssignedStatus: activate to sort column ascending FileStartDate Timestamp: activate to sort column ascending Actions"':
+      - cell:
+        - checkbox
+      - 'cell "NATFileNumber: activate to sort column descending"': ▲ NATFileNumber ▼
+      - 'cell "TagNumber4: activate to sort column ascending"':
+        - text: ▲ TagNumber
+        - superscript: "4"
+        - text: ▼
+      - 'cell "Attorney Name: activate to sort column ascending"': ▲ Attorney Name ▼
+      - 'cell "Transaction7: activate to sort column ascending"':
+        - text: ▲ Transaction
+        - superscript: "7"
+        - text: ▼
+      - 'cell "Grantors: activate to sort column ascending"': ▲ Grantors ▼
+      - 'cell "StreetName: activate to sort column ascending"': ▲ StreetName ▼
+      - 'cell "jurisdiction5: activate to sort column ascending"':
+        - text: ▲ jurisdiction
+        - superscript: "5"
+        - text: ▼
+      - 'cell "State: activate to sort column ascending"': ▲ State ▼
+      - 'cell "AssignedStatus: activate to sort column ascending"': ▲ AssignedStatus ▼
+      - 'cell "FileStartDate Timestamp: activate to sort column ascending"': ▲ FileStartDate Timestamp ▼
+      - columnheader "Actions"
+  - rowgroup:
+    - row "300021 6688990 ( TEST_Partner ) N 2 ( Purchase AOL Only ) Type 1 Streetboro Clark OH N 2025-11-10 13:41:40 Edit NotesDelete":
+      - cell:
+        - checkbox [checked]
+      - cell "300021"
+      - cell "6688990 ( TEST_Partner )"
+      - cell "N"
+      - cell "2 ( Purchase AOL Only )"
+      - cell "Type 1"
+      - cell "Streetboro"
+      - cell "Clark"
+      - cell "OH"
+      - cell "N"
+      - cell "2025-11-10 13:41:40"
+      - cell "Edit NotesDelete":
+        - link "Edit":
+          - /url: /files-vendor-assignment/edit/22
+        - link "Notes":
+          - /url: /public-notes/index/22/2/fva
+        - link "Delete":
+          - /url: javascript:void(null);
+    - row "300022 6688991 ( TEST_Partner ) N 2 ( Purchase AOL Only ) Type 2 Thomas road Clark OH N 2025-11-10 13:41:40 Edit NotesDelete":
+      - cell:
+        - checkbox [checked]
+      - cell "300022"
+      - cell "6688991 ( TEST_Partner )"
+      - cell "N"
+      - cell "2 ( Purchase AOL Only )"
+      - cell "Type 2"
+      - cell "Thomas road"
+      - cell "Clark"
+      - cell "OH"
+      - cell "N"
+      - cell "2025-11-10 13:41:40"
+      - cell "Edit NotesDelete":
+        - link "Edit":
+          - /url: /files-vendor-assignment/edit/23
+        - link "Notes":
+          - /url: /public-notes/index/23/2/fva
+        - link "Delete":
+          - /url: javascript:void(null);
+    - row "300023 6688992 ( TEST_Partner ) N 2 ( Purchase AOL Only ) Type 1 Streetboro Clark OH N 2025-11-10 13:41:40 Edit NotesDelete":
+      - cell:
+        - checkbox [checked]
+      - cell "300023"
+      - cell "6688992 ( TEST_Partner )"
+      - cell "N"
+      - cell "2 ( Purchase AOL Only )"
+      - cell "Type 1"
+      - cell "Streetboro"
+      - cell "Clark"
+      - cell "OH"
+      - cell "N"
+      - cell "2025-11-10 13:41:40"
+      - cell "Edit NotesDelete":
+        - link "Edit":
+          - /url: /files-vendor-assignment/edit/24
+        - link "Notes":
+          - /url: /public-notes/index/24/2/fva
+        - link "Delete":
+          - /url: javascript:void(null);
+    - row "300024 6688993 ( TEST_Partner ) N 2 ( Purchase AOL Only ) Type 2 Thomas road Clark OH N 2025-11-10 13:41:40 Edit NotesDelete":
+      - cell:
+        - checkbox
+      - cell "300024"
+      - cell "6688993 ( TEST_Partner )"
+      - cell "N"
+      - cell "2 ( Purchase AOL Only )"
+      - cell "Type 2"
+      - cell "Thomas road"
+      - cell "Clark"
+      - cell "OH"
+      - cell "N"
+      - cell "2025-11-10 13:41:40"
+      - cell "Edit NotesDelete":
+        - link "Edit":
+          - /url: /files-vendor-assignment/edit/25
+        - link "Notes":
+          - /url: /public-notes/index/25/2/fva
+        - link "Delete":
+          - /url: javascript:void(null);
+- status: Showing 1 to 4 of 4 entries
+- list:
+  - listitem:
+    - link "Previous":
+      - /url: "#"
+  - listitem:
+    - link "1":
+      - /url: "#"
+  - listitem:
+    - link "Next":
+      - /url: "#"
+- text: "Map Field Help 1: Partner specific fields. These are fields A to Z in \"Map Partner Field\" section 2: FileStartDate 3: PartnerID 4: PartnerFileNumber 5: County 6: Zip 7: TransactionType 8: LoanAmount 9: PurchasePriceConsideration 10: LoanNumber"
+- dialog "Delete Record":
+  - document:
+    - heading "Choose Attorney" [level=4]
+    - button "Close"
+    - text: "Available Attorney:"
+    - combobox:
+      - option "Select Attorney"
+      - option "Aaron Bernstein"
+      - option "Adrienne Fernstrom"
+      - option "Alan Hodesblatt"
+      - option "Andrew Bao"
+      - option "Avi Marcus"
+      - option "Bill Maruyama"
+      - option "Bob Ellis"
+      - option "Brad Hill"
+      - option "Brett Cragun"
+      - option "Brian Campbell"
+      - option "Byron Richardson"
+      - option "Caitlin Magnan"
+      - option "Dax Junker"
+      - option "Demetrios Pavlou"
+      - option "Dewey Cheatem and Howe"
+      - option "Elizabeth Quintana"
+      - option "Frank Savona"
+      - option "Ilyas Lakada"
+      - option "Jason Olivier"
+      - option "Jay Bills"
+      - option "Jay Kiiha"
+      - option "Jeremy Litz"
+      - option "Jessica Ugarte"
+      - option "Jim Sheridan"
+      - option "John Lee"
+      - option "Jon Haverly"
+      - option "Josh Foote"
+      - option "Julie Sparks"
+      - option "Karyn Lopez"
+      - option "Kimberly Rushton"
+      - option "Krystal Williams-Oby"
+      - option "Laura Naylor"
+      - option "Leslie Garside"
+      - option "Lewis Maudlin"
+      - option "Mario Micheli"
+      - option "Matt McFarlin"
+      - option "Michael Balocca"
+      - option "Michael Gilmartin"
+      - option "Mike Conway"
+      - option "Molly Ladner"
+      - option "name"
+      - option "National Vendor"
+      - option "Peter Keegan"
+      - option "Philip Jameson"
+      - option "Playwright_Vendor"
+      - option "Playwright_Vendor"
+      - option "QAVendor"
+      - option "Renee Bishop"
+      - option "Richard Reinblatt"
+      - option "Richard Rogers"
+      - option "Ron Smiley"
+      - option "Ryan Jones"
+      - option "Scott Aaron"
+      - option "Scott Crawford"
+      - option "Shira Kingrey"
+      - option "Simone Markowitz"
+      - option "Tamaca Brown"
+      - option "Tanya George"
+      - option "Teresa Gast"
+      - option "TEST ATTORNEY"
+      - option "TestAOLVendor"
+      - option "TestSupportingQA"
+      - option "Test_Vendor" [selected]
+      - option "TIU Test Vendor"
+      - option "Tony Soltani"
+      - option "Valerie Langhall"
+      - option "VendorTIUAbhi"
+      - option "Whitney Estwick"
+    - text: "Services:"
+    - radio "Attorney Opinion Letter Services"
+    - text: "Attorney Opinion Letter Services Delivery Type:"
+    - radio "Email"
+    - text: Email
+    - radio "API" [disabled]
+    - text: API
+    - button "Submit"
+    - button "Close"
+- text: © 2025 NATIONAL ATTORNEY TITLE. All rights reserved.
+```

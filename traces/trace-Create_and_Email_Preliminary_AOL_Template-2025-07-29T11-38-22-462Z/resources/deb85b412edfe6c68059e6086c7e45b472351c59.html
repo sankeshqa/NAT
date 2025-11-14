@@ -1,0 +1,1240 @@
+<!doctype html>
+<html lang="en" data-layout="horizontal" data-layout-style="" data-layout-position="fixed" data-topbar="light">
+
+<head> 
+    <meta charset="utf-8"/>    <title>FilesVendorAssignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+ 
+    
+	<link rel="stylesheet" href="/assets/libs/jsvectormap/css/jsvectormap.min.css"/>
+     <!--datatable css-->
+     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" /> 
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" /> 
+    <!--datatable responsive css-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css"> 
+   
+    <!-- Head Css -->   
+    <!-- Layout config Js -->
+    
+	<script src="/assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/assets/css/icons.min.css"/>
+	<link rel="stylesheet" href="/assets/css/app.min.css"/>
+	<link rel="stylesheet" href="/assets/css/custom.css"/>
+    <!-- Head Css END --> 
+    <!-- One of the following themes -->
+    <!-----NEW-------->
+    
+	<link rel="stylesheet" href="/assets/libs/%40simonwep/pickr/themes/classic.min.css"/>
+	<link rel="stylesheet" href="/assets/libs/%40simonwep/pickr/themes/monolith.min.css"/>
+	<link rel="stylesheet" href="/assets/libs/%40simonwep/pickr/themes/nano.min.css"/>
+	<link rel="stylesheet" href="/assets/libs/multi.js/multi.min.css"/>
+	<link rel="stylesheet" href="/assets/libs/%40tarekraafat/autocomplete.js/css/autoComplete.css"/>
+       
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<!-----NEW End-------->
+            
+</head>
+<body>
+    <div id="layout-wrapper">
+        <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo" style="padding-top: 5px;">
+                    <span class="logo-lg">
+                        <a href="/users/dashboard"><img src="/img/tenxlogo-svg.jpg" alt="LRS" style="height: 60px;"/></a>
+                    </span> 
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button> 
+                <!-- App Search--> 
+            </div>
+            
+            <div class="head-bottom align-items-center header-center">
+                <h3>NATIONAL ATTORNEY TITLE</h3>
+            </div>
+
+                        <div class="d-flex align-items-center">
+                 
+                    <!--<div class="ms-1 header-item d-none d-sm-flex">
+                        <div class="input-container-floating">
+                        <form method="post" accept-charset="utf-8" horizontal="1" action="/files-vendor-assignment/aolindex"> 
+                            <label for="basiInput" class="form-label">System Status</label>
+                            <div class="input select"><select name="archive" onchange="this.form.submit()" class="form-select form-select-sm" aria-label=".form-select-sm example" id="archive"><option value="Current">Current</option><option value="Archive">Archive ( &lt; 2020)</option></select></div>						</form> 
+                        </div>
+                    </div> -->
+                 
+                 
+                <div class="dropdown ms-sm-3 header-item topbar-user">
+                    <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex align-items-center"> 
+                       
+                            <span class="text-start ms-xl-2 welcome-msg">
+                                <i class="ri-account-circle-line"></i>
+                              <span class="welcome-user">
+                                <span class="d-none d-xl-inline-block ms-1 fw-semibold user-name-text">Welcome </span>
+                                <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">tiuadmin User</span>
+                              </span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- <div class="input-container-floating sys-status-menu"> 
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example" fdprocessedid="evwp6k">
+                                <option selected="">Current</option>
+                                <option value="1">Archive</option> 
+                            </select> 
+					    </div> -->
+
+                        <a href="/users/dashboard" class="dropdown-item"><i class="mdi mdi-home text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-home">Home</span></a>                        <a href="/users/logout" class="dropdown-item"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a> 
+                     
+                    </div>
+                </div>
+                
+            </div>
+                    </div>
+    </div>
+</header> 
+
+                    
+ 
+                <!-- ========== App Menu ========== -->
+<div class="app-menu navbar-menu">
+    <div id="scrollbar">
+        <div class="container-fluid">
+            <div id="two-column-menu"></div>
+            <ul class="navbar-nav" id="navbar-nav">
+                <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarPartners" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPartners">
+                        <i class="ri-dashboard-2-line"></i> <span data-key="t-partners">Partners</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarPartners">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+								<a href="/company-mst" class="nav-link" data-key="t-partnerlisting">List Partners</a>                            </li> 
+                            <li class="nav-item">
+                                <a href="/users/partner-user" class="nav-link" data-key="t-userlisting">List Partner Users</a>                            </li>
+                            <!-- <li class="nav-item">
+                                                             
+                            </li> --> 
+                            <li class="nav-item">
+                                <a href="/fields-mst/map-company-field" class="nav-link" data-key="t-mappartner">Map Partners Fields</a>                            </li>
+                            <li class="nav-item">
+                                <a href="/fields-mst/import-company-field" class="nav-link" data-key="t-importsheetsetting">Import Sheet Setting</a>                            </li> 
+                            <li class="nav-item">
+                                <a href="/company-api-keys" class="nav-link" data-key="t-partnerapikey">Manage Partner API Key</a>                            </li> 
+							
+                        </ul>
+                    </div>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarRecords" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRecords">
+                        <i class="las la-record-vinyl"></i> <span data-key="t-records">Records</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarRecords">
+                        <ul class="nav nav-sm flex-column"> 
+                            <li class="nav-item">
+								<a href="/files-main-data/import-records" class="nav-link" data-key="t-uploadcsv">Upload CSV</a>                            </li>
+							<li class="nav-item">
+								<a href="/files-vendor-assignment/add-records" class="nav-link" data-key="t-add">Add Record</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-vendor-assignment" class="nav-link" data-key="t-index">Record Listing</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-vendor-assignment/attindex" class="nav-link" data-key="t-index">Attorney Assignment</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-vendor-assignment/essindex" class="nav-link" data-key="t-index">Escrow Service Assignment</a>                            </li>
+							<!--<li class="nav-item">
+								<a href="/files-vendor-assignment/search-records" class="nav-link" data-key="t-search-records">Search Record</a>                            </li>-->
+                            <!-- <li class="nav-item">
+								<a href="/files-checkin-data/sample-import" class="nav-link" data-key="t-downloadcsv">Download Sample Import CSV</a>                            </li> -->
+                            <li class="nav-item">
+								<a href="/master-data/master-search" class="nav-link" data-key="t-uploadcsv">Master Search</a>                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarRecords" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRecords">
+                        <i class="ri-settings-2-line"></i> <span data-key="t-records">Vendor Management</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarRecords">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+								<a href="/vendor" class="nav-link" data-key="t-list">Vendors List</a>                            </li>
+                            <li class="nav-item">
+								<a href="/vendor/add" class="nav-link" data-key="t-index">Add Vendor</a>                            </li>
+							<li class="nav-item">
+								<a href="/vusers" class="nav-link" data-key="t-add">Vendor User List</a>                            </li>
+                            <li class="nav-item">
+								<a href="/vusers/vendor-add" class="nav-link" data-key="t-add">Add Vendor User</a>                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <!-- <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarRecords" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRecords">
+                        <i class="ri-account-circle-line"></i> <span data-key="t-records">Masters</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarRecords">
+                        <ul class="nav nav-sm flex-column"> 
+                            <li class="nav-item">
+								<a href="/master-data/master-search" class="nav-link" data-key="t-uploadcsv">Search Record</a>                            </li>
+							
+							
+                        </ul>
+                    </div>
+                </li> -->
+                
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarRecords" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRecords">
+                        <i class="ri-settings-2-line"></i> <span data-key="t-records"><!-- Receipt of Exam -->AOL Processing</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarRecords">
+                        <ul class="nav nav-sm flex-column"> 
+                            <li class="nav-item">
+                                <a href="/files-exam-receipt" class="nav-link" data-key="t-receipt">Receipt of Exam</a>                            </li>
+                            <li class="nav-item">
+                                <a href="/files-exam-receipt/upload" class="nav-link" data-key="t-receipt">Upload Receipt of Exam CSV</a>                            </li>
+							<li class="nav-item">
+                                <a href="/fields-mst-exam/map-company-field" class="nav-link" data-key="t-receipt">Map Receipt of Exam Fields</a>                            </li>
+							<li class="nav-item">
+                                <a href="/fields-mst-exam/import-company-field" class="nav-link" data-key="t-receipt">Import Receipt of Exam Fields</a>                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarRecords" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRecords">
+                        <i class="las la-file-upload"></i> <span data-key="t-records">Recording Data</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarRecords">
+                        <ul class="nav nav-sm flex-column"> 
+                            <li class="nav-item">
+                                <a href="/files-recording-data" class="nav-link" data-key="t-receipt">Recording Data</a>                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </li>
+                
+				<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarRecords" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRecords">
+                        <i class="ri-account-circle-line"></i> <span data-key="t-records">AOL</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarRecords">
+                        <ul class="nav nav-sm flex-column"> 
+                            <li class="nav-item">
+								<a href="/files-vendor-assignment/aolindex" class="nav-link" data-key="t-index">Create AOL Template</a>                            </li>
+                            <li class="nav-item">
+								<a href="/reviews/list" class="nav-link" data-key="t-index">Attorney Reviews</a>                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarShip" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarShip">
+                        <i class="ri-account-circle-line"></i> <span data-key="t-ship">County Cal</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarShip">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">								
+								<a href="/files-accounting-data" class="nav-link" data-key="t-accountingentry">County Cal</a>                            </li>                            
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarCal" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCal">
+                        <i class="ri-settings-2-line"></i> <span data-key="t-reports">Reports</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarCal">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">								
+																	<li class="nav-item">
+										<a href="/fields-mst/export-company-field" class="nav-link" data-key="t-exportsheetsetting">Generate Report</a>									</li> 
+								                            </li>                            
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarOthers" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarOthers">
+                        <i class="ri-settings-2-line"></i> <span data-key="t-others">Others</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarOthers">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="/" class="nav-link" data-key="t-userlisting">System Users</a>                            </li> 
+                            <li class="nav-item">
+                                <a href="/transaction-type-mst" class="nav-link" data-key="t-userlisting">Transaction Type Master</a>                            </li>
+                        </ul>
+                    </div>
+                </li> 
+                
+                <!--<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarOpt" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarOpt">
+                        <i class="ri-dashboard-2-line"></i> <span data-key="t-opt">Operations</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarOpt">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+								<a href="/files-qc-data" class="nav-link" data-key="t-rejections">Rejection Management</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-accounting-data" class="nav-link" data-key="t-accountingentry">Accounting Entry</a>                            </li>
+                            <li class="nav-item">
+								<a href="/import-accounting-info" class="nav-link" data-key="t-ImportAccountingInfo">Upload Accounting Info (Import Accounting CSV)</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-accounting-data/account-sheet" class="nav-link" data-key="t-accountingseet">Generate Accounting Sheet</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-accounting-data/estimated-fee-sheet" class="nav-link" data-key="t-estimatedfeesheet">Estimated Fee Sheet</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-accounting-data/pending-file-estimate-sheet" class="nav-link" data-key="t-pendingfileestimatesheet">AF Pending File Estimate Sheet</a>                            </li>
+                            <li class="nav-item">
+								<a href="/csc-accounting" class="nav-link" data-key="t-cscaccounting">CSC Accounting / RecInfo Upload</a>                            </li><li class="nav-item">
+								<a href="/simplifile-accounting" class="nav-link" data-key="t-simplifileaccounting">Simplifile Accounting / RecInfo Upload</a>                            </li>
+                            <li class="nav-item">
+                                <a href="/huntington-accounting" class="nav-link" data-key="t-huntingtonaccounting">Huntington Accounting / RecInfo Upload</a>                            </li>
+                        </ul>
+                    </div>
+                </li>-->
+				
+                <!--<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarShip" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarShip">
+                        <i class="las la-shipping-fast"></i> <span data-key="t-ship">Ship to County</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarShip">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+								<a href="/files-shipto-county-data" class="nav-link" data-key="t-sendtoCounty">Send to County</a>                            </li>
+                            <li class="nav-item">
+								<a href="/import-shipping-info" class="nav-link" data-key="t-esub">Ship to County eSub upload</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-shipto-county-data/generate-shipping-sheet" class="nav-link" data-key="t-shipsheet">Generate Shipping CSV Sheet</a>                            </li>
+                        </ul>
+                    </div>
+                </li>-->
+
+                <!--<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarScanning" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarScanning">
+                    <i class="las la-barcode"></i> <span data-key="t-Scanning">Scanning Recognition</span> 
+                    </a>
+ 
+                    <div class="collapse menu-dropdown" id="sidebarScanning">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+								<a href="/files-recording-data/scanning-recognition" class="nav-link" data-key="t-scann">Scanning Recognition</a>                            </li>
+ 
+                            <li class="nav-item">
+								<a href="/files-recording-data/initiate-coversheet" class="nav-link" data-key="t-inCoversheet">Initiate Coversheet</a>                            </li>
+ 
+                        </ul>
+                    </div>
+                </li>-->
+
+                <!--<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarRecording" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarRecording">
+                        <i class="las la-record-vinyl"></i> <span data-key="t-recording">Recording</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarRecording">
+                        <ul class="nav nav-sm flex-column">
+                           
+                            <li class="nav-item">
+								<a href="/files-recording-data/index-new" class="nav-link" data-key="t-keywithimage">Key With Image</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-recording-data/recording-research" class="nav-link" data-key="t-reseach">Research</a>                            </li>
+                            <li class="nav-item">
+								<a href="/import-recording-info" class="nav-link" data-key="t-importrecordinginfo">Upload Recording Info (Import Recording CSV)</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-recording-data/recording-csv" class="nav-link" data-key="t-recordingcsv">Generate CSV</a> 
+                            </li>
+                            <li class="nav-item">
+								<a href="/files-recording-data/recordingkey-no-image" class="nav-link" data-key="t-keynoimage">Key No Image</a> 
+                            </li>
+							<li class="nav-item">
+								<a href="/files-recording-data/recording-management-report" class="nav-link" data-key="t-recordingManagementReport">Recording Management Report</a> 
+                            </li>
+							<li class="nav-item">
+								<a href="/files-recording-data/recording-confirmation-coversheets" class="nav-link" data-key="t-recordingConfirmationCoversheets">Generate Recording Confirmation Coversheets</a>                            </li>
+                            
+                            <li class="nav-item"> 
+								<a href="/files-returned2partner/return-partner-new" class="nav-link" data-key="t-returntopartnernew">Returned To Partner</a>                            </li>
+                            <li class="nav-item">
+                                <a href="/master-data/complete-order" class="nav-link" data-key="t-userlisting">Completed Order</a>                            </li> 
+							<li class="nav-item">
+								<a href="/files-recording-data/manual-confirmation-coversheets" class="nav-link" data-key="t-manualConfirmationCoversheets">Manual Confirmation Coversheets</a>                            </li>
+							<li class="nav-item">
+								<a href="/files-recording-data/new-confirmation-coversheets" class="nav-link" data-key="t-newConfirmationCoversheets">New Confirmation Coversheets</a>                            </li>
+                            <li class="nav-item">
+								<a href="/files-returned2partner/generate-returnfile-sheet" class="nav-link" data-key="t-generatereturnfilesheet">Generate Return File Sheet</a>                            </li>
+                        </ul>
+                    </div> 
+                </li>-->
+                
+				<!--<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarOthers" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarOthers">
+                        <i class="ri-settings-2-line"></i> <span data-key="t-others">Others</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarOthers">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="/" class="nav-link" data-key="t-userlisting">System Users</a>                            </li> 
+                            <li class="nav-item">
+                                <a href="/users/change-password" class="nav-link">Change Password</a>                            </li>
+							<li class="nav-item">
+                                <a href="/fedex-shipping-setting" class="nav-link">Shipping Setting</a>                            </li>
+							<li class="nav-item">
+                                <a href="/charge-master" class="nav-link">Banking Detail Charge Type</a>                            </li> 
+                            <li class="nav-item">
+                                <a href="/document-type-mst" class="nav-link" data-key="t-userlisting">Document Type Master</a>                            </li>
+                            <li class="nav-item">
+                                <a href="/county-mst" class="nav-link" data-key="t-createuser">List County</a> 
+                            </li> 
+							<li class="nav-item">
+                                <a href="/document-countycal-mst" class="nav-link" data-key="t-userlisting">County Cal Document Type Master</a>                            </li>
+							<li class="nav-item">
+                                <a href="/document-csc-mst" class="nav-link" data-key="t-userlisting">CSC Document Type Master</a>                            </li>
+							<li class="nav-item">
+                                <a href="/document-simplifile-mst" class="nav-link" data-key="t-userlisting">Simplifile Document Type Master</a>                            </li> 
+                        </ul>
+                    </div>
+                </li> -->
+				
+                <!--<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarMasters" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMasters">
+                        <i class="ri-account-circle-line"></i><span data-key="t-masters">Masters</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarMasters">
+                        <ul class="nav nav-sm flex-column">
+							<li class="nav-item">
+                                <a href="/master-data/master-search" class="nav-link">Master Search</a>                            </li>
+							<li class="nav-item">
+                                <a href="/master-data/management-report" class="nav-link">Management Report</a>                            </li>
+                        </ul>
+                    </div>
+                </li>-->
+               
+                <!--<li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarStatistic" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarStatistic">
+                        <i class="ri-account-circle-line"></i><span data-key="t-statistic">Statistics</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarStatistic">
+                        <ul class="nav nav-sm flex-column">
+							<li class="nav-item">
+                                <a href="/statistics/checkin-to-submission" class="nav-link">Checkin Date to Submission Report</a>                            </li>
+                            <li class="nav-item">
+                                <a href="/statistics/checkin-to-recording" class="nav-link">Checkin Date to Recording Information</a>                            </li>
+                            <li class="nav-item">
+                                <a href="/statistics/open-rejected-status" class="nav-link">Open Rejected Status</a>                            </li>
+                        </ul>
+                    </div>
+                </li>-->
+            </ul>
+        </div>
+        <!-- Sidebar -->
+    </div>
+    <div class="sidebar-background"></div>
+</div>
+<!-- Left Sidebar End -->
+<!-- Vertical Overlay-->
+<div class="vertical-overlay"></div> 
+               
+        <div class="main-content">
+            <div class="page-content">
+				
+                <div class="container-fluid lrs-frm sml-field">
+
+
+                                            <!-- Page title and quick search -->
+                        <div class="row" style="margin-bottom:0px;">
+                            <div class="col-12">
+                                <div class="title-bar">
+                                    <div class="page-title-box-lrs d-sm-flex align-items-center justify-content-between">
+                                        <h4 class="mb-sm-0">Create AOL template</h4>
+                                        <!-- (Use This Section to import partner CSV sheet.) -->
+                                    </div>
+                                    <div class="input-container-floating -floating search-section">
+    <form method="post" accept-charset="utf-8" horizontal="1" action="/master-data/advance-search" action="/files-vendor-assignment/aolindex">        <input type="text" name="NATFileNumber" class="form-control" id="NATFileNumber" aria-required="true" Placeholder="NAT File Number">
+        <input type="text" name="PartnerFileNumber" class="form-control" id="PartnerFileNumber" aria-required="true" Placeholder="Partner File Number">
+        <input type="text" name="Grantors" class="form-control" id="mortgagorgrantor" aria-required="true" Placeholder="Grantor(s)">
+        <input type="text" name="State" class="form-control" id="State" aria-required="true" Placeholder="State">
+        <input type="text" name="County" class="form-control" id="County" aria-required="true" Placeholder="County">
+        <div class="submit">
+            <input type="submit" id="searchBtnId" class="btn btn-success" style="padding:3px 10px!important;" value="Quick Search">
+                    </div>
+    </form></div> 
+                                </div>
+                            </div>
+                        </div>
+                    
+                                        
+<!-- ================================================================ -->
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+    	<form method="post" accept-charset="utf-8" horizontal="1" id="emailForm" action="/files-vendor-assignment/aolindex">        <div class="col-lg-12">
+
+        <div class="card">
+            <!--div class="card-header align-items-center d-flex">
+                <h4 class="card-title mb-0 flex-grow-1">Filter By</h4>
+            </div-->
+            <div class="card-body">
+                <div class="live-preview ">
+                    <div class="row long-lbl-frm">
+                    <div class="col-xxl-8 col-md-7 col-sm-12">
+
+                    <h2>Partner</h2>
+                    <div class="row">
+                        <div class="col-xxl-4 col-md-4 col-sm-12">
+                            <div class="row">
+                                <div class="col-xxl-12 col-md-12">
+                                    <div class="input-container-floating">
+                                    <label for="basiInput" class="form-label">Partner</label>
+
+                                    <div class="input select"><select name="company_id" class="form-control" id="company-id"><option value="">Select Partner</option><option value="1">AG_TEST</option><option value="3">SankeshAutomationTest</option><option value="7" selected="selected">SankeshQA_Automation</option><option value="4">STG MORTGAGE</option></select></div>                                    </div>
+                                </div>
+                                <div class="col-xxl-12 col-md-12">
+                                    <div class="input-container-floating">
+                                    <label for="basiInput" class="form-label"><strong>Transaction<sup><font color=red size=1><i>7</i></font></sup></strong></label>
+                                    <div class="input select"><select name="TransactionType" class="form-control" id="transactiontype"><option value="" selected="selected">Select Transaction Type</option><option value="1">Purchase Complete</option><option value="2">Purchase AOL Only</option><option value="3">Refinance Complete</option><option value="4">Refinance AOL Only</option></select></div>                                    </div>
+                                </div>
+                                <div class="col-xxl-12 col-md-12">
+                                    <div class="input-container-floating">
+                                    <label for="basiInput" class="form-label"><strong>State</strong></label>
+
+                                    <div class="input text"><input type="text" name="State" class="form-control" id="state" value=""/></div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-md-4 col-sm-12">
+                            <div class="row">
+                            <div class="col-xxl-12 col-md-12">
+                                    <div class="input-container-floating">
+                                    <label for="basiInput" class="form-label"><strong>NATFileNumber</strong></label>
+                                    <div class="input text"><input type="text" name="NATFileNumber" class="form-control" id="natfilenumber" value=""/></div>                                    </div>
+                            </div>
+                            <div class="col-xxl-12 col-md-12">
+                                    <div class="input-container-floating">
+                                    <label for="basiInput" class="form-label"><strong>StreetName</strong></label>
+                                    <div class="input text"><input type="text" name="StreetName" class="form-control" id="streetname" value=""/></div>                                    </div>
+                            </div>
+                            <div class="col-xxl-12 col-md-12">
+                                    <div class="input-container-floating">
+                                    <label for="basiInput" class="form-label"><strong>jurisdiction<sup><font color=red size=1><i>5</i></font></sup></strong></label>
+                                    <div class="input text"><input type="text" name="County" class="form-control" id="county" value=""/></div>                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-md-4 col-sm-12">
+                            <div class="row">
+                                <div class="col-xxl-12 col-md-12">
+                                    <div class="input-container-floating">
+                                    <label for="basiInput" class="form-label"><strong>TagNumber<sup><font color=red size=1><i>4</i></font></sup></strong></label>
+                                    <div class="input text"><input type="text" name="PartnerFileNumber" class="form-control" id="partnerfilenumber" value=""/></div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-12 col-md-12">
+                                    <div class="input-container-floating">
+                                    <label for="basiInput" class="form-label"><strong>Grantors</strong></label>
+                                    <div class="input text"><input type="text" name="Grantors" class="form-control" id="grantors" value=""/></div>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Transaction Status</h2>
+
+                    <div class="row">
+                        <div class="col-xxl-12 col-md-12">
+
+
+                            <div class="input-container-floating">
+                                <div class="form-check checkBox">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                     Pending (Not Created/Sent)
+                                    </label>
+                                    <input type="radio" name="DocumentReceived" value="pending" id="documentreceived-pending" checked="checked" required="required" class="form-check-input">                                </div>
+                                <div class="form-check checkBox">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                    Preliminary AOL Created Sent
+                                    </label>
+                                    <input type="radio" name="DocumentReceived" value="pre_aol_status" id="documentreceived-pre_aol_status" required="required" class="form-check-input">                                </div>
+                                <div class="form-check checkBox">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                    Final AOL Created and Sent
+                                    </label>
+                                    <input type="radio" name="DocumentReceived" value="final_aol_status" id="documentreceived-final_aol_status" required="required" class="form-check-input">                                </div>
+
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-md-5 col-sm-12">
+
+                    <h2>Upload/Add Specific Search</h2>
+
+                    <div class="row">
+                    <div class="col-xxl-8 col-md-7 col-sm-12">
+                        <div class="row">
+                            <div class="col-xxl-12 col-md-12 col-sm-12">
+                                <div class="input-container-floating">
+                                        <label for="basiInput" class="form-label"><strong>Date Uploaded/Added</strong></label>
+                                        <div class="two-input">
+                                        <div class="row">
+                                            <div class="col-xxl-12 col-md-12 col-sm-12">
+                                            <span class="frm-to">From:</span>
+                                            <div class="input text"><input type="text" name="fromdate" placeholder="(yyyy-mm-dd)" class="form-control f-control-withspan" id="fromdate" aria-label="(yyyy-mm-dd)" value=""/></div>
+                                            </div>
+                                            <div class="col-xxl-12 col-md-12 col-sm-12">
+                                            <span class="frm-to">To:</span>
+                                            <div class="input text"><input type="text" name="todate" placeholder="(yyyy-mm-dd) " class="form-control f-control-withspan" id="todate" aria-label="(yyyy-mm-dd) " value=""/></div>
+                                            </div>
+                                        </div>
+
+
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-xxl-4 col-md-4 col-sm-12">
+                        <div class="btn-group pull-right m-r" role="group"><button class="btn btn-primary block m-b" id="searchBtnId" type="submit">Search</button></div><div class="btn-group pull-right mt-2 m-r" role="group"><a href="/files-vendor-assignment/aolindex" class="btn btn-danger flt-rght">Clear</a></div>
+                        <input type="hidden" name="sno" id="snoId" value=""/>                        <input type="hidden" name="docstatus" id="docstatusId" value=""/>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="aolbtns">
+                    <!--<form id="aol" name="aol" action="http://" target="/files-aol-assignment/add">-->
+                        <input id="assign_pre" Type="submit" value="Create Preliminary AOL" class="btn btn-primary" name="pre_aol" />
+        				<input id="assign_final" Type="submit" value="Create Final AOL for Attorney" class="btn btn-primary"  name="final_aol"/>
+        				<input id="assign_sub" Type="submit" value="Submit Approved AOL to Client" class="btn btn-primary" name="submit_aol"/>
+                        
+                    <!--</form>-->
+<!-- Button to trigger modal -->
+    			</div>
+                </div>
+            </div>
+
+            </div>
+            </div>
+        </div>
+        <!-- table data -->
+        <div class="card">
+			<div class="card-body">
+				<div class="live-preview">
+				<!-- Records Listing -->
+				<!-----Using helper here----->
+<!---------------------------->
+
+ <div class="ibox-content">
+ 	        	
+	<!--------------------Township records ------------------------------->
+		<!--------------------Township records ------------------------------->
+    	<div class="accountList">
+		<table class="table dataTable order-column stripe table-striped table-bordered" id="datatable_example">
+			<thead>
+				<tr>
+					<th>
+					<input type="checkbox" name="checkedAll" id="checkedAll" />					</th>
+
+										<th>NATFileNumber</th>
+					
+					<th>TagNumber<sup><font color=red size=1><i>4</i></font></sup></th>
+
+					
+					<th>Transaction<sup><font color=red size=1><i>7</i></font></sup></th>
+
+					<th>Grantors</th>
+					<th>StreetName</th>
+					<th>jurisdiction<sup><font color=red size=1><i>5</i></font></sup></th>
+					<th >State</th>
+
+										<th >Pre AOL</th>
+					<th >Final AOL</th>
+					<th >Submit AOL</th>
+										<!--<th >ECapable</th>-->
+										<th >FileStartDate Timestamp</th>
+										
+
+										<th scope="col" class="actions">Actions</th>
+									</tr>
+			</thead>
+		</table>
+	</div>
+		
+		<div>&nbsp;<br/></div>
+
+	<div>
+		 
+		<!--- use helper to show Help---->
+		<div class="panel panel-default">
+						 <div class="panel-heading">Map Field Help</div>
+						<div class="panel-body">
+							<div class="m-l helptext">
+								1: Partner specific fields. These are fields A to Z in "Map Partner Field" section <br>2: FileStartDate <br>3: PartnerID <br>4: PartnerFileNumber <br>5: County <br>6: Zip <br>7: TransactionType <br>8: LoanAmount <br>9: PurchasePriceConsideration <br>10: LoanNumber <br>
+							</div>
+						</div>
+						</div>		
+	</div>
+	
+	
+</div>
+
+<script>
+function getBarcode1(){
+          if ($('#file_nos').val().trim() === '') {
+              alert('Please select records to proceed');
+              return false; // prevent action if empty
+          }
+
+          var val1 = 584498;
+		  var val2 = 9;
+		  //alert('okkss');
+		  jQuery('#myModal').modal('show');
+		  return;  
+		  
+		  
+			$.ajax({
+				type: "POST",
+				//url: '/files-vendor-assignment/generate-barcode',
+				url: '/files-checkin-data/generate-barcode',
+				data: {"fileno": val1, "doctype": val2},
+				success: function(data){
+					$('#printThis').html(data);
+					jQuery('#myModal').modal('show');
+				},
+				error: function (xhr, error, code) {
+					if(xhr.status == 500){
+						alert("Your session has expired. Would you like to be redirected to the login page?");
+						window.location.reload(true); return false;
+					}
+				}
+			});
+		
+	} 
+</script>				</div>
+			</div>
+        </div>
+    </div>
+   </form>   <!-- Email Modal -->
+<form method="post" accept-charset="utf-8" action="/pdf/send-aol-email"><div class="modal fade email_popup" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="emailModalLabel">Send Email</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!--<form enctype="multipart/form-data" method="post" accept-charset="utf-8" action="/emails/send"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>-->
+                    <div class="mb-3">
+                        <div class="input email required"><label for="popup_email">Email Address</label><input type="email" name="email" class="form-control" id="popup_email" required="required" aria-required="true"/></div>                        <span class="asgn_error"></span>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input text required"><label for="subject">Subject</label><input type="text" name="subject" class="form-control" required="required" id="subject" aria-required="true"/></div>                    </div>
+                    <div class="mb-3">
+                        <div class="input textarea required"><label for="body">Message</label><textarea name="body" class="form-control" style="height:60px;" required="required" id="body" aria-required="true" rows="5"></textarea></div>                    </div>
+                    <div class="mb-3" id="attachment" style='display: none'>
+					<a href='' target='_blank'>View PDF</a>
+                    </div>
+                    <div class="modal-footer">
+						<input id="email_btn_id" type="hidden" name="email_btn_id" value="">
+						<input id="email_type" type="hidden" name="email_type" value="">
+                        <button type="submit" class="btn btn-success">Send Email</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                <!--</form>-->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</form>
+<!-- Barcode Modal -->
+
+<!-- Barcode Modal helper -->
+<div class="modal fade aol_del" id="myModalPassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+
+						<div class="modal-content">
+
+							<div class="modal-header">
+
+								<h4 class="modal-title" id="myModalLabel">Delete Record</h4>
+								<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<form method="post" accept-charset="utf-8" action="/files-vendor-assignment/aoldelete">
+							<div class="modal-body" id="lock-div">
+								<div class="col-xxl-12 col-md-12">
+									<input type="hidden" name="checkinId" id="checkinId" value=""/>
+
+									<div class="input-container-floating">
+										<label for="basiInput" class="form-label"><strong>Enter Delete Password:</strong></label>
+										<div class="input text required"><input type="text" name="delpassword" id="delpassword" class="form-control" required="required" aria-required="true"/></div>
+									</div>
+								</div>
+
+							</div>
+							<div class="modal-footer">
+								<div class="msg-suceess center"></div>
+								<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+								<button type="submit" class="btn btn-primary">Delete Confirm</button>
+							</div>
+							</form>
+						</div>
+
+					</div>
+				</div><form method="post" accept-charset="utf-8" action="/files-vendor-assignment/add"><div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="myModalLabel">Choose Vendor</h4>
+							<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<div class="modal-body">
+							<div id="printSection">
+								<div id="printThis">
+								</div>
+							</div>
+							<div id="printThisToo"><b>Available Vendor:</b>
+                            <select name="vendorid" class="js-example-basic-single form-control" required="required" id="vendorid"><option value="">Select Vendor</option><option value="80">Aaron Bernstein</option><option value="51">Adrienne Fernstrom</option><option value="33">Alan Hodesblatt</option><option value="61">Andrew Bao</option><option value="77">Avi Marcus</option><option value="28">Bill Maruyama</option><option value="66">Bob Ellis</option><option value="16">Bodonyi Search Services</option><option value="54">Brad Hill</option><option value="78">Brett Cragun</option><option value="35">Brian Campbell</option><option value="25">Byron Richardson</option><option value="50">Caitlin Magnan</option><option value="70">Dax Junker</option><option value="63">Demetrios Pavlou</option><option value="21">DevUser</option><option value="22">Dewey Cheatem and Howe</option><option value="34">Elizabeth Quintana</option><option value="62">Frank Savona</option><option value="41">Ilyas Lakada</option><option value="47">Jason Olivier</option><option value="69">Jay Bills</option><option value="39">Jay Kiiha</option><option value="67">Jeremy Litz</option><option value="57">Jessica Ugarte</option><option value="65">Jim Sheridan</option><option value="42">John Lee</option><option value="74">Jon Haverly</option><option value="68">Josh Foote</option><option value="37">Julie Sparks</option><option value="44">Karyn Lopez</option><option value="29">Kimberly Rushton</option><option value="79">Krystal Williams-Oby</option><option value="48">Laura Naylor</option><option value="75">Leslie Garside</option><option value="43">Lewis Maudlin</option><option value="27">Mario Micheli</option><option value="26">Matt McFarlin</option><option value="72">Michael Balocca</option><option value="40">Michael Gilmartin</option><option value="49">Mike Conway</option><option value="32">Molly Ladner</option><option value="24">name</option><option value="12">National Vendor</option><option value="36">Peter Keegan</option><option value="52">Philip Jameson</option><option value="128">Playwright_Vendor</option><option value="129">Playwright_Vendor</option><option value="20">QAVendor</option><option value="30">Renee Bishop</option><option value="58">Richard Reinblatt</option><option value="45">Richard Rogers</option><option value="31">Ron Smiley</option><option value="17">Roveda Exams Inc</option><option value="59">Ryan Jones</option><option value="60">Scott Aaron</option><option value="71">Scott Crawford</option><option value="76">Shira Kingrey</option><option value="64">Simone Markowitz</option><option value="55">Tamaca Brown</option><option value="53">Tanya George</option><option value="46">Teresa Gast</option><option value="93">TEST ATTORNEY</option><option value="56">Tony Soltani</option><option value="73">Valerie Langhall</option><option value="90">VendorTIUAbhi</option><option value="38">Whitney Estwick</option></select>
+                            </div>
+			<br>
+
+            <div class="row gy-4">
+                        <div id="serv"><label>Services: </label> Select Vendor</div>
+		                </div><br><div class="form-group"><b>CC National Vendor: </b>
+                <input type="checkbox" class="form-check-input" id="cc_nat_vendor" name="cc_nat_vendor" value="email" checked>
+                <input class="js-example-basic-single form-control" id="cc_nat_vendor_email" name="cc_nat_vendor_email" value="peter@tenxdoor.com"><br><br><div class="form-group"><b>Delivery Type: </b>
+                <input type="radio" class="form-check-input" id="delivery_type"  name="delivery_type" value="email">
+                <label for="service2">Email</label>
+                <input type="radio" class="form-check-input" id="delivery_type"  name="delivery_type" value="api" disabled>
+                <label for="service2">API</label></div>
+						</div>
+						<div class="modal-footer">
+                            <input id="file_nos" type="hidden" name="RecId" value="">
+							<button class="btn btn-success" type="submit">Submit</button><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+							<!--<button type="button" class="btn btn-primary" onclick="PrintElem('printSection');">Submit</button> -->
+						</div>
+					</div>
+				</div>
+			</div></form><div class="modal fade" id="myModalLock" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+					 
+						<div class="modal-content">
+
+							<div class="modal-header">
+								
+								<h4 class="modal-title" id="myModalLabel">Lock Record</h4>
+								<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<div class="modal-body" id="lock-div">
+								<div class="col-xxl-12 col-md-12"> 
+								<input type="hidden" name="lockChechinId" id="lockChechinId" value=""/>
+								
+								<input type="hidden" name="lock_status" id="lock_status" value=""/>
+									 
+									<div class="input-container-floating">
+										<label for="basiInput" class="form-label"><strong>Reason:</strong></label>
+										<div class="input textarea"><textarea name="lock_comment" id="lock_comment" class="form-control" style="height:50px;" rows="5"></textarea></div>
+									</div>
+								</div>
+							 
+							</div>
+							<div class="modal-footer">
+								<div class="msg-suceess center"></div>
+								<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary" onclick="saveLockRecord('lock-div');">Save</button>
+							</div>
+							
+						</div>
+					 
+					</div>
+				</div>
+
+                </div>
+            </div>
+        <div id="footer" class="footer">
+	<!--<div class="row">
+		<div class="col-md-4 col-sm-12">
+		<span class="footermsg">
+			  Lender Recording Services, Inc.<br>
+		5455 Detroit Rd, Suite B<br>
+		Sheffield Village, Ohio 44054<br>
+		
+
+		</span>
+		</div>
+		<div class="col-md-4 col-sm-12">
+		<span class="footermsg">
+
+		440.716-1820 / Fax 440.869-0720<br>
+		customerservice@lrsinc.com<br>
+
+		</span>
+		</div>
+		<div class="col-md-4 col-sm-12">
+		 <span>
+				<a href="http://www.lrsinc.com" title="LRS" target="_blank" class="color462e26">www.lrsinc.com</a> <a class="color462e26" href="#" onclick="window.open('/privacy.html','Privacy Information',
+		'height=600,width=600,toolbar=no,directories=no,status=no,linemenubar=no,scrollbars=yes,resizable=yes ,modal=yes');" title="Privacy Information">Privacy Policy</a><br>
+		© 2012 Lender Recording Services. All Rights Reserved.<br>
+		<a title="W3C HTML Validation" href="http://validator.w3.org/" target="_blank" class="color462e26">XHTML</a> | <a title="W3C CSS Validation" href="http://jigsaw.w3.org/css-validator/validator-uri.html" target="_blank" class="color462e26">CSS</a> | <a title="Web Content Accessibility Guidelines" href="http://www.w3.org/TR/WCAG10/" target="_blank" class="color462e26">WCAG</a>
+			  </span>
+		</div>-->
+      
+	<div class="row">
+		<div class="col-md-12 col-sm-12">
+			<span class="footermsg">© 2024 NATIONAL ATTORNEY TITLE. All rights reserved.</span>
+		</div>
+	</div>
+	 
+</div> 
+        </div>
+    </div>
+    
+    <!--<script type="text/javascript">
+        //var SITE_URL_JS = '';
+    </script>-->
+
+    
+	<script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="/assets/libs/feather-icons/feather.min.js"></script>
+	<script src="/assets/libs/node-waves/waves.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jSignature/2.1.2/jSignature.min.js"></script>
+
+    <!--datatable js-->
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+   
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script> 
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script> 
+   
+ 
+    
+	<script src="/assets/js/app.js"></script>
+ <!--"/assets/js/pages/datatables.init",-->
+
+<!-----NEW-------->
+    <!--select2 cdn-->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+         <!-- multi.js Export setting pg-->   <!-- init js Export setting pg -->
+    
+    
+<script type="text/javascript">
+	$(document).ready(function () {
+        // call function to load data table
+        loadDataTable();
+
+        $("button.dreceived").click(function(){
+            var docReceived = [];
+            $.each($(".checkSingle:checkbox:checked"), function(){
+                var fileno = $(this).val()
+               // var doctypeval = $(this).parent().parent().find('input[type="text"]').val();
+			    var doctypeval = $(this).parent().parent().find('input[name="docTypeInput"]').val();
+				var documentTypeHidden = $(this).parent().parent().find('input[name="documentTypeHidden"]').val();
+                var docidarray = doctypeval.split(',');
+                $.each(docidarray, function( index, value ) {
+                    docReceived.push(fileno+"_"+value+"_"+documentTypeHidden);
+                });
+            });
+
+            if(docReceived.length == 0){
+                alert("Please select at least one record");
+                return false;
+            }else{
+                $("#docstatusId").val("dr");
+                $("#snoId").val(docReceived.join(","));
+                $( "#searchBtnId" ).trigger("click");
+            }
+        });
+
+
+        $("button.dnreceived").click(function(){
+            var docNotReceived = [];
+            $.each($(".checkSingle:checkbox:checked"), function(){
+                var fileno = $(this).val()
+               // var doctypeval = $(this).parent().parent().find('input[type="text"]').val();
+			    var doctypeval = $(this).parent().parent().find('input[name="docTypeInput"]').val();
+
+                var docidarray = doctypeval.split(',');
+                $.each(docidarray, function( index, value ) {
+                    docNotReceived.push(fileno+"_"+value);
+                });
+            });
+
+            if(docNotReceived.length == 0){
+                alert("Please select at least one record");
+                return false;
+            }else{
+                $("#docstatusId").val("dnr");
+				$("#snoId").val(docNotReceived.join(","));
+                $( "#searchBtnId" ).trigger("click");
+            }
+        });
+
+        $(document).on('change', '.checkSingle', function() {
+            var selectedValues = [];
+
+            // Iterate over all checked checkboxes and get their values
+            $('.checkSingle:checked').each(function() {
+                //alert($(this).val());
+                selectedValues.push($(this).val());
+            });
+
+            // Update the hidden input with comma-separated values
+            $('#file_nos').val(selectedValues.join(','));
+        });
+
+        /*$(document).on("click", ".send_btn", function () {
+			var newAction = "/pdf/send-aol-email";
+			$("#emailForm").attr("action", newAction).submit();
+		});*/
+		$(document).on("click", ".email_pop_btn", function () {
+			var fileId = $(this).closest("tr").find("input.checkSingle").val(); // Get the file ID
+            $(".asgn_error").html("");
+            $("#popup_email").val("");
+			$.ajax({
+				url: "/pdf/get-company-email",
+				type: "POST",
+				data: { file_id: fileId },
+				dataType: "json",
+				success: function (response) {
+					if (response.success) {
+						$("#popup_email").val(response.email); // Set the email in the input field
+					} else {
+						var link = "/files-vendor-assignment";
+						$(".asgn_error").html("Vendor is not assigned! Please click <a href='"+link+"'>here</a> to assign.");
+					}
+				},
+				error: function () {
+					alert("An error occurred while fetching the email.");
+				} 
+			});
+		});
+
+        $(document).on("click", ".email_pop_btn_final", function () {
+			var fileId = $(this).closest("tr").find("input.checkSingle").val(); // Get the file ID
+            $(".asgn_error").html("");
+            $("#popup_email").val("");
+			$.ajax({
+				url: "/pdf/get-attorney-email",
+				type: "POST",
+				data: { file_id: fileId },
+				dataType: "json",
+				success: function (response) {
+					if (response.success) {
+						$("#popup_email").val(response.email); // Set the email in the input field
+					} else {
+					    var link = "/files-vendor-assignment/attindex";
+						$(".asgn_error").html("Attorney is not assigned! Please click <a href='"+link+"'>here</a> to assign.");
+					}
+				},
+				error: function () {
+					alert("An error occurred while fetching the email.");
+				}
+			});
+		});
+
+		$(document).on("click", ".email_pop_btn", function () {
+			var emailId = $(this).closest("tr").find("input.checkSingle").val(); // Get the value of the checkbox
+			$("#email_btn_id").val(emailId);
+			$("#email_type").val("pre");
+            $("#emailModalLabel").text("Preliminary AOL Email");
+			var filePath = "https://nat.tiuconsulting.us/files/export/aol_assignment/pdf/pre/AssignmentDetails-" + emailId + ".pdf";
+
+			$("#attachment a").attr("href", filePath);
+			$("#attachment").show();
+		});
+
+        $(document).on("click", ".email_pop_btn_final", function () {
+            var emailId = $(this).find("i").attr("data-bs-id");
+            $("#email_btn_id").val(emailId);
+			$("#email_type").val("final");
+			$("#emailModalLabel").text("Final AOL Email");
+
+			var filePath = "https://nat.tiuconsulting.us/files/export/aol_assignment/pdf/final/AssignmentDetails-" + emailId + ".pdf";
+
+			$("#attachment a").attr("href", filePath);
+			$("#attachment").show();
+		});
+
+        $(document).on("click", ".email_pop_btn_submit", function () {
+            var emailId = $(this).find("i").attr("data-bs-id");
+            $("#email_btn_id").val(emailId);
+			$("#email_type").val("aol_signed");
+			$("#emailModalLabel").text("Submit Approved AOL to Client");
+
+			var filePath = "https://nat.tiuconsulting.us/files/export/aol_assignment/pdf/aol_signed/AssignmentDetails-" + emailId + ".pdf";
+
+			$("#attachment a").attr("href", filePath);
+			$("#attachment").show();
+		});
+
+        $(document).on('click', 'input[name="DocumentReceived"]', function() {
+            $(this).closest('form').submit();
+        });
+    });
+
+    function loadDataTable(){
+
+
+
+        var formdata = {'formdata':{"company_id":"7","TransactionType":"","State":"","NATFileNumber":"","StreetName":"","County":"","PartnerFileNumber":"","Grantors":"","DocumentReceived":"pending","fromdate":"","todate":"","sno":"","docstatus":"","datatable_example_length":"10"},'is_index':'Y'};
+        var columndata =[{"data":"Checkbox","orderable":false},{"data":"FileNo","orderable":true},{"data":"PartnerFileNumber","orderable":true},{"data":"TransactionType","orderable":true},{"data":"Grantors","orderable":true},{"data":"StreetName","orderable":true},{"data":"County","orderable":true},{"data":"State","orderable":true},{"data":"DocStatus","orderable":true},{"data":"DateAdded","orderable":true},{"data":"Actions","orderable":false}];
+		var columndata =[{"data": "Checkbox","orderable": false,"bSortable": false,"mData": "Checkbox"},{"data": "FileNo","orderable": true,"bSortable": true,"mData": "FileNo"},{"data": "PartnerFileNumber","orderable": true,"bSortable": true,"mData": "PartnerFileNumber"},{"data": "TransactionType","orderable": true,"bSortable": true,"mData": "TransactionType"},{"data": "Grantors","orderable": true,"bSortable": true,"mData": "Grantors"},{"data": "StreetName","orderable": true,"bSortable": true,"mData": "StreetName"},{"data": "County","orderable": true,"bSortable": true,"mData": "County"},{"data": "State","orderable": true,"bSortable": true,"mData": "State"},{"data": "DocStatus","orderable": false,"bSortable": false,"mData": "DocStatus"},{"data": "DocStatus1","orderable": false,"bSortable": false,"mData": "DocStatus1"},{"data": "DocStatus2","orderable": false,"bSortable": false,"mData": "DocStatus2"},{"data": "DateAdded","orderable": true,"bSortable": true,"mData": "DateAdded"},{"data": "Actions","orderable": false,"bSortable": false,"mData": "Actions"}];
+        console.log(columndata);
+        $('#datatable_example').DataTable({
+            "lengthMenu": [[10, 25, 50, 100, -1],[10, 25, 50, 100, 'All']],
+			"processing": true,
+            "pageLength": 10,
+            "serverSide": true,
+            "searching": false,
+            "dom": 'Blfrtip',
+			      "buttons": [{ extend: 'csv', text: 'Export CSV', exportOptions: { columns: ':visible:not(:first-child):not(:last-child)' } }],
+            "ajax": {
+                url : '/files-vendor-assignment/ajax-list-aolindex',
+                data: formdata,
+                type: 'POST',
+				error: function (xhr, error, code) {
+					if(xhr.status == 500){
+						alert("Your session has expired. Would you like to be redirected to the login page?");
+						window.location.reload(true); return false;
+					}
+				}
+            },
+            "columns": columndata,
+            //"order": [ [11, 'desc'] ],
+            createdRow: function( row, data, dataIndex ) {
+				/*if ( data['ECapable'] == "Both SF & CSC" ) {
+					$(row).addClass( 'bothColor' );
+				} else if( data['ECapable'] == "SF" ) {
+					$(row).addClass( 'sfColor' );
+				} else if(data['ECapable'] == 'CSC') {
+					$(row).addClass( 'cscColor' );
+				} else if ( data['lock_status'] == 1 ) {
+					$(row).addClass( 'disabledColor' );
+				} */
+			}
+        });
+    }
+
+	function getBarcode(obj,val1,val2){
+		if(obj.checked == true){
+
+			$.ajax({
+				type: "POST",
+				url: '/files-vendor-assignment/generate-barcode',
+				data: {"fileno": val1, "doctype": val2},
+				success: function(data){
+					$('#printThis').html(data);
+					jQuery('#myModal').modal('show');
+				},
+				error: function (xhr, error, code) {
+					if(xhr.status == 500){
+						alert("Your session has expired. Would you like to be redirected to the login page?");
+						window.location.reload(true); return false;
+					}
+				}
+			});
+		}
+	}
+
+	function PrintElem(elem)
+	{
+		var mywindow = window.open('', 'PRINT', 'height=600,width=800');
+		mywindow.document.write('<html><head><title>' + document.title  + '</title>');
+		mywindow.document.write('</head><body >');
+		mywindow.document.write('<h1>' + document.title  + '</h1>');
+		mywindow.document.write(document.getElementById(elem).innerHTML);
+		mywindow.document.write('</body></html>');
+
+		mywindow.document.close(); // necessary for IE >= 10
+		mywindow.focus(); // necessary for IE >= 10*/
+
+		mywindow.print();
+		mywindow.close();
+
+		//return true;
+	}
+
+
+	function openLockModel(recId,  lock_status){
+
+        $('#lockChechinId').val(recId);
+        $('#lock_status').val(lock_status);
+        jQuery('#myModalLock').modal('show');
+        return false;
+	}
+
+    function saveLockRecord(element){
+
+        var lockChechinId = $('#'+element).find('#lockChechinId').val();
+        var lock_status = $('#'+element).find('#lock_status').val();
+        var lock_comment = $('#'+element).find('#lock_comment').val();
+
+        $.ajax({
+            type: "POST",
+            url: '/files-vendor-assignment/ajax-lock-record',
+            data: {"chechinId":lockChechinId, "lock_status":lock_status, "lock_comment":lock_comment},
+            success: function(data){
+                $('#'+element).find("input[type=text], input[type=hidden],textarea").val("");
+
+               //jQuery('#myModalLock').find('.msg-suceess').html('Record lock status updated!');
+               jQuery('#myModalLock').modal('hide');
+
+               $("#datatable_example").DataTable().destroy();
+                // call function to load data table
+                loadDataTable();
+            },
+				error: function (xhr, error, code) {
+					if(xhr.status == 500){
+						alert("Your session has expired. Would you like to be redirected to the login page?");
+						window.location.reload(true); return false;
+					}
+				}
+        });
+        return false;
+	}
+
+
+
+	function openPasswordModel(Id){
+		$('#checkinId').val(Id);
+        jQuery('#myModalPassword').modal('show');
+        return false;
+	}
+</script>
+
+
+    <!-----NEW End--------> 
+    
+	<script src="/assets/libs/multi.js/multi.min.js"></script>
+	<script src="/assets/js/pages/form-advanced.init.js"></script>
+	<script src="/assets/js/lrscommon.js"></script>
+	
+</body>
+</html>

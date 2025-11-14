@@ -1,0 +1,63 @@
+⚠️ Adopt and Sign button not visible after first Sign
+❌ Error during signature step: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for getByRole('button', { name: 'Sign Here' }).first()
+    - locator resolved to <button tabindex="0" type="button" aria-invalid="true" class="tab-button inked" data-tabindex-removed="true" olive-menu-initialized="true" olive-menu-position="below left" id="tab-form-element-d76fc1e0-f352-434f-9baf-038b534885d7" data-qa="signature-tab-required-d76fc1e0-f352-434f-9baf-038b534885d7" olive-menu-trigger="signature-tab-menu-d76fc1e0-f352-434f-9baf-038b534885d7">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div>…</div> from <div id="OverlayContainer" data-aria-active="true" data-qa="overlay-delayed-progress-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div>…</div> from <div id="OverlayContainer" data-aria-active="true" data-qa="overlay-delayed-progress-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div>…</div> from <div id="OverlayContainer" data-aria-active="true" data-qa="overlay-delayed-progress-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 500ms
+    16 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="css-fv3lde">…</div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <h2 data-qa="adopt-dialog-title-heading-tag" class="olv-heading olv-ignore-transform css-1krv5ft">…</h2> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <h2 data-qa="adopt-dialog-title-heading-tag" class="olv-heading olv-ignore-transform css-1krv5ft">…</h2> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div role="none" class="css-1cw8dvn" data-qa="adopt-signature-modal-scrim"></div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="css-fv3lde">…</div> from <div id="ModalContainer" data-aria-active="true" class="olv-modal-portal">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
